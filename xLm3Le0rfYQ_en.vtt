@@ -1,0 +1,3277 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:03.280 --> 00:00:10.880
+okay um hello everyone i'm jun i'm the instructor for this workshop uh g8k
+
+00:00:10.880 --> 00:00:18.080
+variant calling so welcome everyone uh so for now does everyone mind turning on
+
+00:00:18.080 --> 00:00:26.240
+your camera just so that i i know who you are you're there hi okay so
+
+00:00:26.240 --> 00:00:33.760
+uh before we start it seems like we have a very small crowd so that's that's good i guess
+
+00:00:33.760 --> 00:00:39.360
+um so uh just a like a little bit about myself so i think at first we can
+
+00:00:39.360 --> 00:00:46.160
+maybe go around since just there's just a few of us it's very easy to quickly go around and introduce ourselves quickly
+
+00:00:46.160 --> 00:00:53.280
+so my name is jun i am a postdoc in the eeb department at ucla uh i work
+
+00:00:53.280 --> 00:00:58.879
+with curclomular my population geneticist and anthropological geneticist
+
+00:00:58.879 --> 00:01:06.320
+i got my degree in anthropology and now i study human population genetics stuff related to archaic humans and also
+
+00:01:06.320 --> 00:01:12.880
+modern human evolution so do we want to
+
+00:01:12.880 --> 00:01:18.159
+quickly go around and tell me which institute or department you're
+
+00:01:18.159 --> 00:01:23.200
+from um what is your favorite biological question
+
+00:01:23.200 --> 00:01:29.520
+like i'm not sure if everybody here is graduate student or some some of you may be like undergrad or faculty like i'm not sure
+
+00:01:29.520 --> 00:01:35.840
+so just tell us a little bit about yourself and also um i know not everybody fill out the the
+
+00:01:35.840 --> 00:01:41.439
+questionnaire on google form and that's okay so just in a few words just tell me what's your
+
+00:01:41.439 --> 00:01:47.680
+main goal of attending this workshop like like if you're trying to be an dtk expert if you have your own data
+
+00:01:47.680 --> 00:01:52.720
+or you're trying to work on like right now or you're just trying to get a brief understanding so just
+
+00:01:52.720 --> 00:01:59.520
+just like a little bit so that i know what to what to get ready for um
+
+00:01:59.520 --> 00:02:07.200
+do i have a volunteer that wants to start okay i'll go first yeah so my name is
+
+00:02:07.200 --> 00:02:14.160
+omari and i'm from cornell university and i'm studying biomedical engineering
+
+00:02:14.160 --> 00:02:21.920
+phd i'm currently in my second year and i'm very interested in the use of selfie dna to study infectious
+
+00:02:21.920 --> 00:02:27.440
+diseases but i'm very new to this topic and to
+
+00:02:27.440 --> 00:02:32.720
+the field in general so i figured it's a good skill to learn
+
+00:02:32.720 --> 00:02:40.879
+yeah that sounds great um i can go next sure
+
+00:02:40.879 --> 00:02:48.080
+hi i'm rohan uh i have a background in bioinformatics mostly i've worked with like rnac data
+
+00:02:48.080 --> 00:02:54.720
+and like while so i was working at wild cornell and now i have moved to case western over here
+
+00:02:54.720 --> 00:03:02.560
+so now i am working with like imaging data so my primary interests are like kind of like integrated research like in
+
+00:03:02.560 --> 00:03:10.400
+imaging and omix and uh i have always like wanted to work with like different kinds of omix datasets so
+
+00:03:10.400 --> 00:03:16.400
+uh i'm like always like trying to learn like different omics like single cell rnases and they
+
+00:03:16.400 --> 00:03:22.480
+call it so data sets and like different kinds of omx datasets although i am kind of like
+
+00:03:22.480 --> 00:03:28.560
+familiar familiar with these technologies and like i have seen people working with like variants and things
+
+00:03:28.560 --> 00:03:33.840
+but yeah i haven't really like gone like a deep dive and learn how to
+
+00:03:33.840 --> 00:03:39.599
+like process these things and like how what do they mean basically snips and
+
+00:03:39.599 --> 00:03:45.120
+all these kind of things so yeah yeah that sounds great and i think what you're good at is something i don't
+
+00:03:45.120 --> 00:03:50.720
+really know like i don't really work on rnc but that sounds cool yeah it'll be good uh
+
+00:03:50.720 --> 00:03:57.680
+anyone else next i can go next guys my name is kim i am also a second
+
+00:03:57.680 --> 00:04:03.840
+year phd student like omari um i'm in the anthropo department sorry a
+
+00:04:03.840 --> 00:04:10.400
+truck is coming by i'm in the anthropology department at ucla and i study human genetics and
+
+00:04:10.400 --> 00:04:16.560
+epigenetics and i've been kind of going down like a selection scan wormhole
+
+00:04:16.560 --> 00:04:23.040
+lately yeah yeah it's hard i saw that you work with abby
+
+00:04:23.040 --> 00:04:29.199
+right yeah yeah say hi to her i haven't seen her in a year oh yeah that's so cool i didn't know you
+
+00:04:29.199 --> 00:04:36.000
+guys knew each other yeah we barely met right before the pandemic started and and like we said well let's get
+
+00:04:36.000 --> 00:04:42.080
+coffee at some point and then we never see each other again oh yeah she's super busy she has like
+
+00:04:42.080 --> 00:04:50.720
+two kids yeah yeah that's really cool though cool um
+
+00:04:50.720 --> 00:04:58.800
+what else yeah i can hear you so i'm a postdoc at cedars my name is sarona i don't have my
+
+00:04:58.800 --> 00:05:05.120
+camera in my lap that's fine so i just i'm just taking this workshop
+
+00:05:05.120 --> 00:05:13.199
+to learn about uh the variant calling and stuff yeah just out of interest yeah cool
+
+00:05:13.199 --> 00:05:19.919
+yeah um and we see we have a new person joining us uh hi
+
+00:05:19.919 --> 00:05:25.759
+mohammed are you there
+
+00:05:25.759 --> 00:05:32.400
+um okay yeah um if you have uh
+
+00:05:32.400 --> 00:05:37.919
+do you have your camera or do you like uh or do you have your microphone like i
+
+00:05:37.919 --> 00:05:43.600
+mean if not that's fine like we're just quickly going around to introduce ourselves that that's okay
+
+00:05:43.600 --> 00:05:49.280
+yeah no worries um yeah and again i'm june i'm teaching
+
+00:05:49.280 --> 00:05:55.759
+this workshop so okay uh so now that we briefly know each other oh he typing
+
+00:05:55.759 --> 00:06:01.280
+sorry he does this okay that that's okay so so um before we
+
+00:06:01.280 --> 00:06:06.479
+start i just wanted to uh like go over some quick like
+
+00:06:06.479 --> 00:06:11.759
+housekeeping stuff um so uh everything we're going to cover for the next two days are going to be
+
+00:06:11.759 --> 00:06:17.840
+recorded um so just to avoid some uh interactive issues with with zoom
+
+00:06:17.840 --> 00:06:24.000
+uh i'd like you to have yourself muted most of the time um when i'm sharing my screen i actually
+
+00:06:24.000 --> 00:06:29.520
+can't really see the chat box like i realize that so if you have questions feel free to
+
+00:06:29.520 --> 00:06:35.520
+interrupt me just add me to yourself at that time just say i have a question stop there like i was out there but you
+
+00:06:35.520 --> 00:06:40.720
+just like if you type in the chat box while i'm sharing my screen i can't really see that i won't even
+
+00:06:40.720 --> 00:06:46.800
+i think i won't even know there's there's like a there's a message um so it's actually my first time
+
+00:06:46.800 --> 00:06:54.639
+teaching this workshop so i have everything prepared um what i don't know and i like
+
+00:06:54.639 --> 00:07:02.080
+is like how much realistic i can cover in three hours so if i'm going very fast or too slow uh
+
+00:07:02.080 --> 00:07:07.440
+feel free to let me know and my plan is to have
+
+00:07:07.440 --> 00:07:13.440
+the backbone of gatk covered today and go over some of the details with
+
+00:07:13.440 --> 00:07:21.520
+like like like how to deal with vcs and how to clean that tomorrow and maybe do more like question like q a
+
+00:07:21.520 --> 00:07:28.400
+things tomorrow so that's that's a plan but i may not exactly follow that depending on how how things go like i realistically i
+
+00:07:28.400 --> 00:07:35.360
+don't really know how long it takes to cover all my slides so let's let's try and start
+
+00:07:35.360 --> 00:07:43.840
+all right so oh before we start is everybody on uh hoffman right now
+
+00:07:43.840 --> 00:07:49.919
+okay uh so uh i will start with some lectures but at some point uh i think it will be
+
+00:07:49.919 --> 00:07:55.280
+cool that would so since there's just a few of us like we each get on huffman and type something so i
+
+00:07:55.280 --> 00:08:00.319
+can share my screen on my end and and just to see if everything will go like we
+
+00:08:00.319 --> 00:08:06.879
+we won't actually run real analysis during these three hours because some things will take more than three hours to finish um
+
+00:08:06.879 --> 00:08:12.720
+but at least we can cover the basic commands so if you have your
+
+00:08:12.720 --> 00:08:22.800
+terminal or or whatever command line open that will be very convenient um so let's start
+
+00:08:23.280 --> 00:08:29.599
+okay is everybody seeing my slide sounds good okay
+
+00:08:29.599 --> 00:08:35.360
+we went over this already okay so this is the schedule for the next
+
+00:08:35.360 --> 00:08:42.719
+uh two days um so i will uh especially today i will go with some
+
+00:08:42.719 --> 00:08:48.480
+lectures especially for the first half of today and we'll talk about like the basics of
+
+00:08:48.480 --> 00:08:53.600
+what is the genomic variance what is varying calling and how gatk
+
+00:08:53.600 --> 00:09:00.160
+works also together with other programs like like in general how how this thing works um and also during
+
+00:09:00.160 --> 00:09:06.880
+today and also during tomorrow uh we'll run some interactive practices uh what i mean by that is we literally
+
+00:09:06.880 --> 00:09:12.160
+type in some code and see if jt can respond to us um and if this throws us
+
+00:09:12.160 --> 00:09:17.680
+errors or something like that so during these practices after today and tomorrow what i'm
+
+00:09:17.680 --> 00:09:22.720
+expecting to see is we should set up a gatk
+
+00:09:22.720 --> 00:09:30.320
+pipeline on hoffman that will go from rao sequence to a vcf
+
+00:09:30.320 --> 00:09:36.800
+for a few individuals so for the assignment for this workshop i don't mean i don't really want to
+
+00:09:36.800 --> 00:09:44.000
+throw you some very new uh like super big data set um so if you have
+
+00:09:44.000 --> 00:09:50.720
+uh downloaded this data set that i shared with you that will be the data you can work on or
+
+00:09:50.720 --> 00:09:56.560
+if you have your own data like so say right now you have some bond files you want to make vcs based on that you can work on that
+
+00:09:56.560 --> 00:10:01.680
+too um so for the like i think for those of you for getting grades um
+
+00:10:01.680 --> 00:10:07.279
+other than the attendance uh you're going to be graded based on the assignment and also like a small quiz
+
+00:10:07.279 --> 00:10:13.279
+by the end of tomorrow um so for the assignment is as simple as by the end of the day we
+
+00:10:13.279 --> 00:10:19.440
+get a vcf output and if so if we can get that everything looks good we're happy so the
+
+00:10:19.440 --> 00:10:25.279
+assignment and also the quest both of them are not going to be due until literally the end of this week
+
+00:10:25.279 --> 00:10:31.519
+so you have i know some of the analysis on gatk may take a few hours and especially if you're running two errors
+
+00:10:31.519 --> 00:10:38.640
+it may take some time to debug so you you guys all have the end of sunday to to show me that you
+
+00:10:38.640 --> 00:10:44.560
+have your output and you turn in the quiz so the quiz will be another google form that i will send out and
+
+00:10:44.560 --> 00:10:50.880
+i'll send that out after we finish everything by the end of tomorrow and you you can finish that in class or you can
+
+00:10:50.880 --> 00:10:59.680
+take it home and fill it up before uh before next week all right
+
+00:10:59.680 --> 00:11:06.000
+so um so let's start with some of the the basics with uh genomic variants
+
+00:11:06.000 --> 00:11:11.680
+um so i think uh from what i from what eloy told me uh all of you
+
+00:11:11.680 --> 00:11:17.040
+guys have taken a ngs workshop before or something equivalent to that
+
+00:11:17.040 --> 00:11:22.320
+so you should know a little bit about like how like a fast q file looks like and maybe
+
+00:11:22.320 --> 00:11:30.880
+even how bomb file looks like so we know that those files they cover this information for the entire genome
+
+00:11:30.880 --> 00:11:36.880
+so say for talking about humans which is the organism i'm most familiar with so most of the examples i'm going to
+
+00:11:36.880 --> 00:11:42.880
+give here are based on human if you need some examples with some other stuff so i can i can probably talk
+
+00:11:42.880 --> 00:11:48.959
+about something about mice but not really about plants anyway so for humans our genome is about
+
+00:11:48.959 --> 00:11:55.120
+like three database in size so that that's that's a lot of information so if you're talking about
+
+00:11:55.120 --> 00:12:00.639
+like sequences like if you're looking at our fastq files or the bom files for humans
+
+00:12:00.639 --> 00:12:06.160
+that's a lot and if we have several individuals um we're talking about a lot of like
+
+00:12:06.160 --> 00:12:11.200
+disk storage uh realistically when we study it say a population
+
+00:12:11.200 --> 00:12:16.880
+um what you're interested in most of the time it's not like what exactly are these three gay
+
+00:12:16.880 --> 00:12:23.040
+base pairs like what they are is in sequence and what genes they called most of the time what we're interested
+
+00:12:23.040 --> 00:12:29.200
+in is the difference between individuals or between populations because
+
+00:12:29.200 --> 00:12:34.959
+we know that most of our genomes are very conservative it is not just a conservative between
+
+00:12:34.959 --> 00:12:40.000
+human individuals it's also a lot of them are almost identical shared across
+
+00:12:40.000 --> 00:12:46.560
+species so some um like fun fact about like how
+
+00:12:46.560 --> 00:12:51.760
+conservative our genomes could be we know that among humans 99.9
+
+00:12:51.760 --> 00:12:58.399
+of genomes are identical um we know that between us and chimpanzees it's also like almost like 99 are
+
+00:12:58.399 --> 00:13:05.600
+identical um actually between us and banana guess how much we share we share 40 percent so that's that's how
+
+00:13:05.600 --> 00:13:12.320
+how conservative genomes are um so when we come down to like most we're interested in human
+
+00:13:12.320 --> 00:13:18.000
+populations we're looking at diseases we're looking at our biological variations what we're most interested in is just
+
+00:13:18.000 --> 00:13:25.360
+this point one percent so that's why we want to do genomic variant calling which is we want to identify what this
+
+00:13:25.360 --> 00:13:31.360
+point one percent of the difference are there on our genome because ultimately those are the ones
+
+00:13:31.360 --> 00:13:37.600
+that contribute to the all this phenotypical geno or genetic variations that we see among
+
+00:13:37.600 --> 00:13:44.399
+us and also like if we're interested in like real what real world questions like disease risks
+
+00:13:44.399 --> 00:13:50.800
+um evolutionary histories this point one percent is really what matters
+
+00:13:50.800 --> 00:13:56.240
+so genomic variant calling is just one way of saying we want to find
+
+00:13:56.240 --> 00:14:02.320
+out what this point one percent are and where they're located um
+
+00:14:02.320 --> 00:14:10.079
+so for if we're looking at our genome there's all different sort of variations we can carry um the simplest
+
+00:14:10.079 --> 00:14:16.000
+type is literally you have one base pair that is different between two individuals or a few
+
+00:14:16.000 --> 00:14:22.720
+individuals so if we see differences between like like this point mutations like the original from point mutation but
+
+00:14:22.720 --> 00:14:28.079
+then eventually we just see this one base pair differences across many individuals we call those
+
+00:14:28.079 --> 00:14:33.839
+single nucleotide polymorphism well or sometimes we call that snaps
+
+00:14:33.839 --> 00:14:40.639
+um so what we're seeing here is like eventually in those vcl files this
+
+00:14:40.639 --> 00:14:48.639
+is very similar to what we're going to see there so what we're seeing here is we're looking at um this is uh some like a small set of
+
+00:14:48.639 --> 00:14:55.760
+the sequence in drosophila or fruit fly uh individuals so here we're looking at the positions
+
+00:14:55.760 --> 00:15:03.199
+so there are like maybe 20 something positions here and we know what is the um
+
+00:15:03.199 --> 00:15:08.480
+um uh like what like what is the nucleotide for this
+
+00:15:08.480 --> 00:15:13.600
+position in um the say uh most of the individuals
+
+00:15:13.600 --> 00:15:20.000
+and then we have three populations here so they represent three um i think
+
+00:15:20.000 --> 00:15:25.839
+it's not just three populations there's probably different subspecies here uh i forgot what exactly
+
+00:15:25.839 --> 00:15:32.000
+this table is about but anyway we can think of as three species um so we see that you know a lot of
+
+00:15:32.000 --> 00:15:38.000
+these positions they share what most individuals carry at this allele
+
+00:15:38.000 --> 00:15:44.959
+so and it is represented by this little dash line here so what it means is for this population
+
+00:15:44.959 --> 00:15:50.000
+everybody here carry this uh allele that we see maybe in the
+
+00:15:50.000 --> 00:15:57.279
+reference genome and then also in most of the individuals in this species but if we look at another population
+
+00:15:57.279 --> 00:16:02.320
+maybe some of them don't have exactly what other others carry
+
+00:16:02.320 --> 00:16:08.399
+so in this case we call this set a variant and in this case this is a snip
+
+00:16:08.399 --> 00:16:14.959
+variant so if you look at all of this side some of the sides may not be a variant in a given
+
+00:16:14.959 --> 00:16:22.240
+population but if you look across populations then they may become a variant so in
+
+00:16:22.240 --> 00:16:28.880
+population genetics we also call this type of variance like as long as they're not fixed completely like if we
+
+00:16:28.880 --> 00:16:34.480
+consider this a population then all of these are variants they're segregating which means
+
+00:16:34.480 --> 00:16:40.800
+their their frequency is not zero or one but then if we look at this
+
+00:16:40.800 --> 00:16:47.839
+population specifically like if you ignore the others some of this may no longer be variance in those cases we don't call
+
+00:16:47.839 --> 00:16:53.120
+them segregating sites and one unique thing here is for this one
+
+00:16:53.120 --> 00:16:59.199
+in particular it is a variant but if we're looking at just of this population the reason is a
+
+00:16:59.199 --> 00:17:07.360
+variant because uh this t is different from the c in the reference genome but um like if you're familiar with
+
+00:17:07.360 --> 00:17:14.319
+some basic population genetics term uh in this case we call that this very uh this snip
+
+00:17:14.319 --> 00:17:19.360
+is actually fixed in this population it's not fixed if we expand our scope
+
+00:17:19.360 --> 00:17:25.280
+and look at all these three since it's fixed here it is not a segregating set in terms of this
+
+00:17:25.280 --> 00:17:32.559
+population but then if we consider everybody all together it's still a segregating site so this is just something that um in
+
+00:17:32.559 --> 00:17:38.559
+case it may get confusing here and there this is something to clarify so anyway what i'm trying to say here is
+
+00:17:38.559 --> 00:17:44.720
+snip is one of the most common genomic variant and the term variant is actually a
+
+00:17:44.720 --> 00:17:51.840
+relative term depending on which individuals you're looking at so something may be a variant um in one population but it may not be
+
+00:17:51.840 --> 00:18:01.840
+when in another population so um yes so it's each in the previous slide
+
+00:18:02.000 --> 00:18:09.679
+what's the heading like abc is each fly yeah so this is just like uh like
+
+00:18:09.679 --> 00:18:15.120
+you can call it individual one two three four so that's the this is
+
+00:18:15.120 --> 00:18:20.320
+the last column is uh yeah we don't really need this here but uh this is saying whether or
+
+00:18:20.320 --> 00:18:27.440
+not this mutation is non-synonymous or synonymous so this is more like we are considering
+
+00:18:27.440 --> 00:18:35.360
+this being like a like a mutation in a protein coding region whether or not they will confer a difference in terms of the the
+
+00:18:35.360 --> 00:18:41.039
+the coding product yeah so i like yeah so so we don't really need
+
+00:18:41.039 --> 00:18:46.480
+this here like this is just one example that i find maybe straightforward to illustrate what a
+
+00:18:46.480 --> 00:18:52.559
+snip yes um so there are also different type of
+
+00:18:52.559 --> 00:18:59.039
+genomic variants sometimes it's more than just one base pair that is involved so whenever there's a variant that
+
+00:18:59.039 --> 00:19:05.200
+involves more than one base pair we call that a structural variation because it
+
+00:19:05.200 --> 00:19:10.720
+it will change a structure of the genome so whether or not it is like just a few base pairs or it's
+
+00:19:10.720 --> 00:19:16.640
+like longer than that in any case we can group them together um they're called structural variation
+
+00:19:16.640 --> 00:19:22.160
+and they're just in contrast to the snips like like a different group of genomic
+
+00:19:22.160 --> 00:19:29.039
+variants there are all different ways of like like having this structural variation uh i'm not
+
+00:19:29.039 --> 00:19:35.440
+going to go into too much of the details here it's just like for your
+
+00:19:36.000 --> 00:19:42.559
+interest in case you uh like i think some of you may be very familiar with this if you have taken
+
+00:19:42.559 --> 00:19:49.360
+genetics classes some of you may not be so you can have a set of a sequence and with the
+
+00:19:49.360 --> 00:19:55.039
+mutation that actually insert another sequence in it so in that case we call that insertion
+
+00:19:55.039 --> 00:20:00.960
+the opposite of that happening is you start it with sql selectives and then suddenly you're missing this whole chunk
+
+00:20:00.960 --> 00:20:06.640
+in that case we call it a deletion you can also have a sequence that doesn't change in length
+
+00:20:06.640 --> 00:20:13.200
+it's just like simply this part that's swapped it can happen at times um so we call
+
+00:20:13.200 --> 00:20:18.320
+that inversion so like visually they look identical but
+
+00:20:18.320 --> 00:20:24.320
+some of the sequence is actually like swapped in order uh sometimes you may have like one part
+
+00:20:24.320 --> 00:20:31.520
+that keeps repeating itself and result in this copy number variation or sometimes it's just like one time it duplicates
+
+00:20:31.520 --> 00:20:37.200
+each other um so anyway these are all different ways of having structural variations sometimes you can
+
+00:20:37.200 --> 00:20:42.240
+you may have even structural variation on the like on on a scale of chromosome like say you
+
+00:20:42.240 --> 00:20:48.080
+have an entire chromosome that duplicates or missing in in all of these cases we call them
+
+00:20:48.080 --> 00:20:53.760
+genomic variants um but in terms of this workshop like when we're trying to use
+
+00:20:53.760 --> 00:21:00.320
+gatk to call or to identify this genomic variants we are not interested in all of them
+
+00:21:00.320 --> 00:21:05.679
+because when we're having like more than one small part of the genome involved like
+
+00:21:05.679 --> 00:21:12.320
+when we have like some copy number variation we have like a whole chromosome structural variation it's actually very
+
+00:21:12.320 --> 00:21:17.600
+hard to map them um so structural variation is a whole different type of
+
+00:21:17.600 --> 00:21:23.520
+class um and and we we don't really talk about that here so
+
+00:21:23.520 --> 00:21:29.520
+when we come down to like using gatk to try to code some of the variants uh most of the time we're focusing on
+
+00:21:29.520 --> 00:21:34.640
+snips and we can also cover some of those short variants so if it's an insertion
+
+00:21:34.640 --> 00:21:42.480
+or deletion that doesn't involve like say some megabase of of the genome if it's just say like
+
+00:21:42.480 --> 00:21:48.960
+some tens of base pair or some hundreds of base pair we can still map them fairly well and
+
+00:21:48.960 --> 00:21:57.440
+identify them so in any case we will call snips and some short insertions and deletions
+
+00:21:57.440 --> 00:22:03.200
+well insertion deletion you will call them indels so snips plus indels they're in general
+
+00:22:03.200 --> 00:22:09.360
+generally speaking short variants and those are the ones that for the gatk is powerful at identifying
+
+00:22:09.360 --> 00:22:15.520
+so if you're interested in other type of genomic variation like those copy number variations like those other
+
+00:22:15.520 --> 00:22:22.400
+type of structural variations you may want to use a different type of tool um so for
+
+00:22:22.400 --> 00:22:30.159
+gatk okay first of all it focuses on short variance another term we focus on is it
+
+00:22:30.159 --> 00:22:36.240
+identifies like or this for this workshop we're using a tool in jtk that identifies
+
+00:22:36.240 --> 00:22:43.840
+germline short variant um like like germination for variance so
+
+00:22:43.840 --> 00:22:50.640
+what is germline mutations or germline variants um like as the name indicates uh germline
+
+00:22:50.640 --> 00:22:58.400
+mutations are the mutations that happens in the germ cells or sperms or eggs um because those are
+
+00:22:58.400 --> 00:23:03.600
+the cells that are involved in the reproduction um whatever mutation that happened to
+
+00:23:03.600 --> 00:23:08.720
+the the germ cells are the ones that will get passed down to the next generation
+
+00:23:08.720 --> 00:23:15.760
+so in terms of like genetics when we're talking about like like changes over generations changes
+
+00:23:15.760 --> 00:23:20.880
+between populations we're interested in the ones that are inheritable like we want to see
+
+00:23:20.880 --> 00:23:27.120
+like change like revolution of this variance uh over time and over like like space
+
+00:23:27.120 --> 00:23:35.120
+scales so most of the time we're interested in this germ limitations um so there's another group of
+
+00:23:35.120 --> 00:23:40.400
+mutations that doesn't happen to germ cell in which case if they happen to any
+
+00:23:40.400 --> 00:23:46.000
+other body cell except sperms and eggs we call those somatic mutations
+
+00:23:46.000 --> 00:23:51.039
+so those also happens all the time every time individuals have a cancer most of the
+
+00:23:51.039 --> 00:23:56.880
+time it's because of mutations to the to the body cells like depending on wherever they are
+
+00:23:56.880 --> 00:24:02.640
+um so somatic mutations or semantic variants are very important because a lot of
+
+00:24:02.640 --> 00:24:07.919
+times they're involved in cancers and other diseases but since
+
+00:24:07.919 --> 00:24:15.679
+they're not germ cells they don't get passed on through generations so gat does have a tool
+
+00:24:15.679 --> 00:24:21.760
+that help you identify somatic mutations if that's something of interest in your in your research but
+
+00:24:21.760 --> 00:24:28.080
+that is not something we're interested in for this specific workshop so for us for today and tomorrow we're
+
+00:24:28.080 --> 00:24:33.120
+interested in using gatk to identify germline short variants
+
+00:24:33.120 --> 00:24:41.279
+or snips and indels how why are the techniques different for
+
+00:24:41.279 --> 00:24:47.279
+these mutations i mean the same tools can identify either mutation right
+
+00:24:47.279 --> 00:24:52.159
+that's a great question um
+
+00:24:53.039 --> 00:25:00.559
+i think well we can't we can go back to the gatk page they have a they have a good explanation on that
+
+00:25:00.559 --> 00:25:08.158
+uh intuitively speaking i think that has something to do with your sequence uh
+
+00:25:08.480 --> 00:25:13.760
+like i think like i think if you're interested in somatic variants uh the type of sequence you're
+
+00:25:13.760 --> 00:25:18.880
+gonna obtain and also uh like even like the mapping process
+
+00:25:18.880 --> 00:25:24.799
+may be different um i don't really work with somatic variation so i don't really have a great answer for that
+
+00:25:24.799 --> 00:25:32.480
+um but i think that's that's a great question and we can go back to jtk page and see what exactly those two uh
+
+00:25:32.480 --> 00:25:37.840
+the two tools vary um so so i don't want to give a firm answer
+
+00:25:37.840 --> 00:25:43.039
+here because i don't have exactly that answer in my mind but yeah that we can i can find out that
+
+00:25:43.039 --> 00:25:48.000
+quickly and send that back to you after after today
+
+00:25:49.279 --> 00:25:57.360
+um okay so um um for uh
+
+00:25:57.360 --> 00:26:02.480
+uh for the type of files we're interested in uh we know that before when we're
+
+00:26:02.480 --> 00:26:07.600
+looking at like the raw sequences that are in the fastq files and when we try to map them to a
+
+00:26:07.600 --> 00:26:13.520
+reference genome we get some sun file and also bond file for the genomic variants
+
+00:26:13.520 --> 00:26:20.559
+since there's it's just like a small number of them this file that we're dealing with is much smaller than a bomb file or
+
+00:26:20.559 --> 00:26:26.080
+fastq files so uh this the representation for this variance
+
+00:26:26.080 --> 00:26:32.880
+are in the file that we call vcf uh this is literally like some uh variance
+
+00:26:32.880 --> 00:26:39.600
+uh files that that that show you the variance um so which means for the gtk tool that
+
+00:26:39.600 --> 00:26:45.440
+we're using to identify um this variance we're essentially trying to call this uh
+
+00:26:45.440 --> 00:26:52.159
+variance in in our raw sequence and produce them in this vcf format
+
+00:26:52.159 --> 00:26:59.520
+so um i don't know if everyone here have seen a vcf before it looks to me from the google survey
+
+00:26:59.520 --> 00:27:07.760
+that i did some of you have seen it some of you haven't but anyway this is a screenshot of a vcf file
+
+00:27:07.760 --> 00:27:13.600
+this is something from from my own research question i'm just taking a screenshot here so all of the
+
+00:27:13.600 --> 00:27:20.320
+vcfs are almost identical in two ways um they're the basic structure for vcf is
+
+00:27:20.320 --> 00:27:27.360
+at first if you open a vcf file you can open them in excel or you can open them in r uh in any case
+
+00:27:27.360 --> 00:27:33.360
+you open you open this files you first see a bunch of lines with this double hash
+
+00:27:33.360 --> 00:27:40.320
+actually so i think since i'm sharing all of my screen it might be easier to look at that here okay this is one of
+
+00:27:40.320 --> 00:27:47.440
+the vcl vcf files from my work you open this and at first you'll see this double hash
+
+00:27:47.440 --> 00:27:54.159
+stuffs like a lot like after maybe some a few hundreds of lines you started with something else so we
+
+00:27:54.159 --> 00:28:00.640
+call this everything started with two uh hash we call those header lines so what they are is they're
+
+00:28:00.640 --> 00:28:06.799
+essentially comments there are comments that give you information about how the cvcf file is generated what type
+
+00:28:06.799 --> 00:28:12.559
+of format it's in even like like when you're seeing some acronyms later on
+
+00:28:12.559 --> 00:28:19.279
+what they represent what type of individuals are here uh how many chromosomes are included um
+
+00:28:19.279 --> 00:28:26.080
+and even like what type of commands you use to generate these vcfs like over time so they're all included here most of the
+
+00:28:26.080 --> 00:28:31.919
+time we don't like if you're just looking at the variance you don't really need to look at these headers sometimes even for
+
+00:28:31.919 --> 00:28:37.440
+for your own convenience when you're trying to manipulate things like in python you are you may even want to get rid of these
+
+00:28:37.440 --> 00:28:44.240
+headers but they are useful because sometimes when you're looking at something down here um you want to reverse like using an
+
+00:28:44.240 --> 00:28:51.440
+acronym you're not sure what they are you go back here and find like those comments so after the two
+
+00:28:51.440 --> 00:28:58.480
+uh hash eventually you'll come to one line that started with one pound sign so that
+
+00:28:58.480 --> 00:29:04.480
+is the start of the vcf and when you're starting with one hash it means like here here you go that we
+
+00:29:04.480 --> 00:29:10.159
+save started and this is the column names or the labels for everything you're gonna see below
+
+00:29:10.159 --> 00:29:16.960
+so all of the vcfs the first nine columns uh are identical
+
+00:29:16.960 --> 00:29:24.880
+so if you're looking at this knight um they're like all of the vcfs no matter what species what populations what like tools
+
+00:29:24.880 --> 00:29:29.919
+you use they always started with this first nine columns so what they are the first one
+
+00:29:29.919 --> 00:29:35.840
+is which chromosome in this song the second is the genomic position so it depends
+
+00:29:35.840 --> 00:29:41.520
+depending on the reference genome you use these positions may vary a little bit
+
+00:29:41.520 --> 00:29:47.360
+but generally speaking they started from a small number to a large number along the chromosome
+
+00:29:47.360 --> 00:29:53.679
+you also will see this id um column which actually so
+
+00:29:53.679 --> 00:29:59.919
+if it's a snip or if it's a short variant that it has been profiled before um usually
+
+00:29:59.919 --> 00:30:06.640
+for for this uh variance they have been given a name before so this is just a different way
+
+00:30:06.640 --> 00:30:12.320
+of calling position one at this
+
+00:30:12.320 --> 00:30:18.399
+how many is this like two around two megabase 2.5 megabase this is just a different way of calling
+
+00:30:18.399 --> 00:30:23.840
+this thing so not all of the variants have an id so if it doesn't it will just it will
+
+00:30:23.840 --> 00:30:29.200
+just be empty here with a little dot um but sometimes you can look up stuff
+
+00:30:29.200 --> 00:30:35.679
+based on just these rsids or you can look things up by their uh relative like positions on on
+
+00:30:35.679 --> 00:30:42.240
+the genome um the next two columns are the reference alleles and the
+
+00:30:42.240 --> 00:30:47.600
+alternate allele uh i have a slight later that will cover what exactly yes i referenced earlier on
+
+00:30:47.600 --> 00:30:52.640
+alternate allele generally speaking reference allele is what you see on the reference genome
+
+00:30:52.640 --> 00:30:59.600
+and alternate allele is not what you're seeing reference genome something else um so
+
+00:30:59.600 --> 00:31:06.080
+this would so usually here in the red line you only have one entry so you
+
+00:31:06.080 --> 00:31:12.720
+can like it's either a snip or maybe it's like a short variant in any case you only have like one thing
+
+00:31:12.720 --> 00:31:20.399
+in this column for the alternate ones it you not necessarily will have just one thing so if you just have like one
+
+00:31:20.399 --> 00:31:28.159
+entry here it means for this specific locus you only have you only observe two different alleles
+
+00:31:28.159 --> 00:31:34.399
+so we call those biologic sites you may run into this term here and there say sometimes we have a
+
+00:31:34.399 --> 00:31:40.480
+raw vcf with all sort of variants and say we just want to keep the bioelect size
+
+00:31:40.480 --> 00:31:47.360
+so when when you see that term say okay we just want to buy a link it means you want to filter them based on this
+
+00:31:47.360 --> 00:31:53.360
+column here and you only want things that with only one entry in the alternate allele
+
+00:31:53.360 --> 00:31:59.120
+column so when when there's something that is not biolic most of the time what you're seeing is
+
+00:31:59.120 --> 00:32:04.960
+so i'm just gonna edit this here you may have see things like like this
+
+00:32:04.960 --> 00:32:12.559
+so there will be other um um uh entries here that are separated by
+
+00:32:12.559 --> 00:32:20.000
+a comma so usually when you see that what that means is for this position you see more than one
+
+00:32:20.000 --> 00:32:26.480
+alternate allele in addition to the reference value you may see it maybe a c you may see an ac here or sometimes it's
+
+00:32:26.480 --> 00:32:32.320
+even a longer thing so in so that's what these two columns are about
+
+00:32:32.320 --> 00:32:39.679
+here is another column that is about the quality score so when we are calling vcf later we will
+
+00:32:39.679 --> 00:32:46.080
+see that like eventually through all of these processes um the program would assign a quality
+
+00:32:46.080 --> 00:32:52.720
+score for each of these calls so sometimes like like if you have really good high
+
+00:32:52.720 --> 00:32:58.559
+quality genome like high coverage most of these quality scores are great um but
+
+00:32:58.559 --> 00:33:03.919
+depending on the plus like where they are sometimes you may have this weird like a few contacts that
+
+00:33:03.919 --> 00:33:09.519
+are not well aligned so you may have low quality scores or sometimes like depending on your
+
+00:33:09.519 --> 00:33:14.640
+coverage if you have low coverage in the first place maybe most of the quality scores are bad
+
+00:33:14.640 --> 00:33:20.240
+so those are some information that you can further use for you to filter the bcf later on like
+
+00:33:20.240 --> 00:33:27.039
+depending on your research project so this is quality square here and here is also related to the quality
+
+00:33:27.039 --> 00:33:33.120
+um it's it may not just be about a specific score uh sometimes we we use all different
+
+00:33:33.120 --> 00:33:39.519
+sort of criteria and those we're gonna cover tomorrow like how we do filtering for vcf but anyway
+
+00:33:39.519 --> 00:33:46.399
+you can assign a label under this and you can call them pass you can call them not pass or you can call them like
+
+00:33:46.399 --> 00:33:53.600
+maybe it has a low score of something else so anyway you can assign your own labels here and this is
+
+00:33:53.600 --> 00:33:59.919
+something that's just helpful for you for uh for you to manage the vcf like you may
+
+00:33:59.919 --> 00:34:05.679
+not want to keep all of the sites you may want to you may want to get rid of some of the bad ones so this is just something that you can
+
+00:34:05.679 --> 00:34:12.000
+refer to like you can you can filter based on the filter uh the filter label here
+
+00:34:12.000 --> 00:34:17.760
+so the next column is usually really long so if you try to expand it you see that okay it doesn't even end
+
+00:34:17.760 --> 00:34:23.200
+that it contains a lot of things so this is some meta information for the
+
+00:34:23.200 --> 00:34:29.200
+population that you're interested in so this example here is a human population
+
+00:34:29.200 --> 00:34:35.200
+um so in this info here you see this all this acronym and i may not remember all of them some
+
+00:34:35.200 --> 00:34:41.839
+of these are the like a little frequencies uh allele count and uh what is a little frequency in all
+
+00:34:41.839 --> 00:34:48.398
+different populations so all of these acronyms in the info part if you don't remember that's fine you
+
+00:34:48.399 --> 00:34:53.679
+can refer them back to everything here so all of these things under info
+
+00:34:53.679 --> 00:35:00.800
+you can find the respective information in your uh in the headers
+
+00:35:00.800 --> 00:35:06.560
+um so most of the time depending on what exactly you're doing with the vcf
+
+00:35:06.560 --> 00:35:13.440
+um this info column is not directly useful for if you're calculating like say
+
+00:35:13.440 --> 00:35:18.640
+allele frequencies or other stuffs but at times say if you want to figure out
+
+00:35:18.640 --> 00:35:24.400
+um for this population looking at what is the frequency in some other worldwide
+
+00:35:24.400 --> 00:35:29.599
+populations you may not need to compute your own again you can look it up in the info column
+
+00:35:29.599 --> 00:35:36.000
+or sometimes you want to figure out what is that allele in like the in the s what is the successful
+
+00:35:36.000 --> 00:35:42.400
+allele in for for this uh population uh or for sorry for for this uh snip you can also
+
+00:35:42.400 --> 00:35:50.800
+find out in this column so the next shared column here is called format
+
+00:35:50.800 --> 00:35:58.480
+so what it is is it annotates what you're going to see in the rest of your uh
+
+00:35:58.480 --> 00:36:06.160
+genotypes so always the first ones you're going to see is genotype and it may follow by
+
+00:36:06.160 --> 00:36:12.480
+some other information that is related to this genotype so let's look at a different example
+
+00:36:12.480 --> 00:36:18.240
+here this one looks better okay so this one here is a different vcf
+
+00:36:18.240 --> 00:36:24.839
+so for here you can see that this format other than the genotype it also includes a bunch of other
+
+00:36:24.839 --> 00:36:30.000
+informations um so i think i included an example here
+
+00:36:30.000 --> 00:36:36.720
+uh that maybe we can see it more clearly if we if we uh open this up um
+
+00:36:36.720 --> 00:36:43.599
+so this is just a zoom in of this cell here which is the same as this table that i'm
+
+00:36:43.599 --> 00:36:51.760
+showing you here okay so if you're zooming at one of the cells what it is showing is everything is
+
+00:36:51.760 --> 00:36:59.680
+separated by columns here so um if you look at things
+
+00:36:59.680 --> 00:37:06.000
+like so there are like what like one two three four five different information
+
+00:37:06.000 --> 00:37:11.760
+included in this genotype cell and what they are is the first one the gt represents for
+
+00:37:11.760 --> 00:37:16.880
+genotype and an ad you can find it in the header ad is allele
+
+00:37:16.880 --> 00:37:23.599
+depth and the next one is the total red death and also you have
+
+00:37:23.599 --> 00:37:29.119
+the genotype quality you also have a fresco genotype likelihood okay so what
+
+00:37:29.119 --> 00:37:34.480
+they are is we're saying that for this position there
+
+00:37:34.480 --> 00:37:39.839
+there is a reference genome and there's alt sorry there's a reference allele there's an alternate allele
+
+00:37:39.839 --> 00:37:47.200
+uh usually for the genotypes we call the reference alleles zeros so since all of the reference
+
+00:37:47.200 --> 00:37:52.880
+entries there's only one entry here so there's only one zero here so all of this are the zeros
+
+00:37:52.880 --> 00:37:59.359
+in the genome test that we're seeing and alternately all depending on how many entries are here
+
+00:37:59.359 --> 00:38:07.359
+it is a number starting from one to whatever so say you have only one alternate allele then the one
+
+00:38:07.359 --> 00:38:13.839
+here is going to be this one so so then for for this position for
+
+00:38:13.839 --> 00:38:19.200
+example there are two type of alleles and we recall that this individual have
+
+00:38:19.200 --> 00:38:25.839
+genotype 0 1 it means that for that individual at this position the genotype
+
+00:38:25.839 --> 00:38:31.359
+is tg so it's just like a way like we don't want to write atcg here because that may
+
+00:38:31.359 --> 00:38:36.960
+be very messy to look at we'll just use zero and ones to represent which alleles
+
+00:38:36.960 --> 00:38:44.960
+these individuals carry um if you have more than one alternate allele so if it's not biolic so you have like
+
+00:38:44.960 --> 00:38:52.480
+maybe a g here maybe like a gt here like maybe this is a structural variation uh in that case whatever the second one
+
+00:38:52.480 --> 00:38:58.400
+is going to be two instead of one so you have zero one two sometimes you have
+
+00:38:58.400 --> 00:39:05.760
+three maybe you can even have four um so this uh genotype this uh code here will just
+
+00:39:05.760 --> 00:39:13.920
+represent which alternate allele you're you're looking at um this other informations
+
+00:39:13.920 --> 00:39:19.280
+depending on again depending on what you're doing with the vcf they may or may not be useful so read
+
+00:39:19.280 --> 00:39:24.400
+depth is later we're going to see that how we actually call this
+
+00:39:24.400 --> 00:39:31.200
+genotypes it actually depends on so so you guys all know like this um
+
+00:39:31.200 --> 00:39:38.079
+ngs class you see that for each position it has scanned multiple times in this uh
+
+00:39:38.079 --> 00:39:46.240
+sequencing reads so say for this position this is a high coverage genome the overall read depth at this
+
+00:39:46.240 --> 00:39:54.320
+at this position is 28 which means if you're looking at this bond file this this realignment you may count it 28 times
+
+00:39:54.320 --> 00:40:00.960
+amount is 28 times 25 of the time you're counting zeros like or you're
+
+00:40:00.960 --> 00:40:06.000
+seeing that in 25 of those reads you're seeing the reference allele
+
+00:40:06.000 --> 00:40:13.200
+only three of them you are seeing the alternate allele but since you do see two of them alternating in this case
+
+00:40:13.200 --> 00:40:19.200
+it called a this genotype here zero slash one so it's instead of
+
+00:40:19.200 --> 00:40:27.599
+everything being reference allele it says this is a heterozygous here um so depending on um
+
+00:40:27.599 --> 00:40:34.240
+like all the overall quality and also how many like route that they're there eventually you can assign you have
+
+00:40:34.240 --> 00:40:41.040
+quality score through the program you don't need to worry about that here and the last one here is the pl
+
+00:40:41.040 --> 00:40:48.560
+it may come useful depending on if you want to filter your vcf by um like how much do you believe
+
+00:40:48.560 --> 00:40:55.359
+this genotype is really what it is so what it is is it is a minus 10 times a log
+
+00:40:55.359 --> 00:41:00.400
+likelihood ratio of the probability of this genotype so the probability of
+
+00:41:00.400 --> 00:41:06.640
+this of this genotype being this given the data you see so this is a
+
+00:41:06.640 --> 00:41:13.040
+minus log likelihood which means um if you do like some quick math the lower the value
+
+00:41:13.040 --> 00:41:18.240
+you see here the higher the probability this genotype is what it
+
+00:41:18.240 --> 00:41:23.520
+is so uh you see three numbers here because you only have
+
+00:41:23.520 --> 00:41:30.480
+two alleles it's either zero or once so everything is um
+
+00:41:30.640 --> 00:41:37.599
+so we're talking about human here everything has like two alleles for each individual and you can only have like for all the
+
+00:41:37.599 --> 00:41:45.280
+genotypes you can have is either zero zeros or zero ones or one ones so this is saying that given this
+
+00:41:45.280 --> 00:41:50.960
+this minus uh this first scale likelihood the highest probability of this
+
+00:41:50.960 --> 00:41:56.319
+likelihood is actually zero ones which is being called here and the chance
+
+00:41:56.319 --> 00:42:03.599
+this uh this position may be actually a zero 0 is not super high
+
+00:42:03.599 --> 00:42:10.000
+but it i mean you do see more zeros than once here and the chance this
+
+00:42:10.000 --> 00:42:17.280
+is a 1 1 genotype is super low so we read this reversely the lower the number it is the
+
+00:42:17.280 --> 00:42:23.280
+higher the probability of the genotype so the order of this is reference slash reference
+
+00:42:23.280 --> 00:42:30.720
+reference slash alternate and alternate slash alternate so this is how we read the vcf um
+
+00:42:30.720 --> 00:42:36.240
+uh like after you have seen a few of them in your own research it will get really clear like the first
+
+00:42:36.240 --> 00:42:43.520
+night they're all shared and this the lot the from this column on is each column represents one individual
+
+00:42:43.520 --> 00:42:51.839
+and most of the time what you're interested in is the genotype here yes so the third row
+
+00:42:51.839 --> 00:42:56.720
+why does it say zero zero although it's g to t
+
+00:42:57.520 --> 00:43:04.160
+um it says zero zero for this individual um it has an alternate allele and that
+
+00:43:04.160 --> 00:43:09.760
+alternate allele may not be seen in every individual so usually you have a vcf
+
+00:43:09.760 --> 00:43:16.079
+that is uh so this is a thousand genome human human project
+
+00:43:16.079 --> 00:43:21.680
+you see a huge um like you can have like a lot of individuals you can have like literally
+
+00:43:21.680 --> 00:43:26.800
+a thousand of them so the alternate allele may be seen somewhere among this
+
+00:43:26.800 --> 00:43:34.160
+huge population but not in that given individual um so if you noticed another thing
+
+00:43:34.160 --> 00:43:41.119
+that uh well now that i'm here already like i show you
+
+00:43:41.119 --> 00:43:47.280
+two examples of vcf you may see that in some cases you see the
+
+00:43:47.280 --> 00:43:52.480
+genotypes like the zero one zero zeros they're being separated by a slash
+
+00:43:52.480 --> 00:43:58.880
+but sometimes you see things like this that are separated by uh how do you call this symbol like this
+
+00:43:58.880 --> 00:44:06.640
+little line here so the difference between these two is whether or not you are calling
+
+00:44:06.640 --> 00:44:12.079
+haplotypes in addition to the genotype so what what we mean by haplotype
+
+00:44:12.079 --> 00:44:18.079
+is um for um if you're thinking about like like one
+
+00:44:18.079 --> 00:44:25.359
+generation making another generation like like in this reproduction process we know that sperms and eggs they carry
+
+00:44:25.359 --> 00:44:30.560
+literally half of your genomic information so uh which
+
+00:44:30.560 --> 00:44:37.200
+uh of the so say you have like a few sites here um and they all have their own genotype
+
+00:44:37.200 --> 00:44:44.720
+which ones like are segregating together versus the other uh we may or may not know so if we know
+
+00:44:44.720 --> 00:44:52.480
+the haplotype which is we know uh well maybe here like if you're looking at this a few
+
+00:44:52.480 --> 00:44:59.280
+like some of them are all zeros it doesn't really matter but some of them is like zero and ones uh we may not like
+
+00:44:59.280 --> 00:45:04.640
+if we don't know the haplotype we know for this position at this individual it is zero ones
+
+00:45:04.640 --> 00:45:10.880
+so there's there's two things that can happen here but we don't know which is going along with the rest of
+
+00:45:10.880 --> 00:45:16.960
+the variance here um so in that case we have just a genotype we don't know the haplotype
+
+00:45:16.960 --> 00:45:23.040
+so we call those type unphased so whenever you see a slash it means we're just in the genotype but
+
+00:45:23.040 --> 00:45:28.240
+we can't call the haplotype yet um because we don't know which ones are set we don't have enough information yet
+
+00:45:28.240 --> 00:45:34.560
+to know which ones are segregating together with others so this slash is called unphased
+
+00:45:34.560 --> 00:45:41.599
+genotype um you see them a lot especially for uh whatever is being generated by gatk
+
+00:45:41.599 --> 00:45:47.520
+everything you get is unfazed to call haplotype like to figure out which ones are
+
+00:45:47.520 --> 00:45:52.800
+segregating together with others it involves another set of methods that
+
+00:45:52.800 --> 00:45:58.160
+we're not going to cover here but just for your own interest this is a
+
+00:45:58.160 --> 00:46:03.440
+separate analysis called haplotype estimation it involves a lot of statistical models
+
+00:46:03.440 --> 00:46:10.240
+but anyway when you have a phased uh vcf it means that you can trust
+
+00:46:10.240 --> 00:46:16.560
+this little line here so whatever on the left are being segregating together like they're
+
+00:46:16.560 --> 00:46:22.079
+one haplotype and whatever on the right is one half protect so
+
+00:46:22.079 --> 00:46:27.359
+this is something that you may notice when you read different types of vcfs
+
+00:46:27.359 --> 00:46:34.720
+all right now let me just close this guys we don't need this anymore um
+
+00:46:34.720 --> 00:46:41.200
+so another concept that is important when we're talking about different alleles there okay this
+
+00:46:41.200 --> 00:46:47.440
+is not necessarily needed for the gate variant calling per se but
+
+00:46:47.440 --> 00:46:54.240
+they're a important concept we're talking about vcfs so i think ultimately the goal here is
+
+00:46:54.240 --> 00:47:00.560
+to generate vcf and to even understand what you can do with vcs so a lot of times we're talking about
+
+00:47:00.560 --> 00:47:07.760
+we're using these names um we have just mentioned reference allele versus alternative
+
+00:47:07.760 --> 00:47:13.280
+depending on whether or not you see that earlier on the reference genome there are all these other terms that
+
+00:47:13.280 --> 00:47:18.400
+people also use so one of them is called major allele versus minor allele
+
+00:47:18.400 --> 00:47:24.400
+so what that means is a major allele is literally the most common allele you see in a in a
+
+00:47:24.400 --> 00:47:31.359
+given population for a given locus and whatever that is not a major allele um especially if it's
+
+00:47:31.359 --> 00:47:37.599
+bialyc the other one we call that minor allele so you sometimes you may encounter this people ask you
+
+00:47:37.599 --> 00:47:44.160
+look at this vcf get the minor allele frequencies okay then you're going to figure out like given this vcf
+
+00:47:44.160 --> 00:47:50.319
+figure out first which one of the two alleles that you see less common and then that allele
+
+00:47:50.319 --> 00:47:55.760
+frequency is the one you're looking at um a lot some other times people are
+
+00:47:55.760 --> 00:48:01.839
+talking about ancestral alleles versus derived alleles so ancestral allele yes
+
+00:48:01.839 --> 00:48:07.280
+for example your if you're in your question is human you're looking at humans and chimpanzees
+
+00:48:07.280 --> 00:48:13.200
+we know that human chimps we share a common ancestor somewhere back there so whatever allele
+
+00:48:13.200 --> 00:48:20.640
+that is observed in that last common ancestor we call that ancestral audios
+
+00:48:20.640 --> 00:48:26.800
+and whatever happened on the specific state of specific human lineage in contrast to chimps we call that a
+
+00:48:26.800 --> 00:48:32.720
+derivative so it is very easy to get confused with
+
+00:48:32.720 --> 00:48:38.480
+them sometimes you may have a reference allele that is the major allele and also happen to be
+
+00:48:38.480 --> 00:48:43.920
+ancestral but sometimes it may not be the case so every two
+
+00:48:43.920 --> 00:48:49.920
+here are in contrast to each other but between the two sets sometimes you're talking about the same
+
+00:48:49.920 --> 00:48:56.079
+thing sometimes you're not so they're not necessarily interchangeably useful uh
+
+00:48:56.079 --> 00:49:03.359
+usable um so really depending on what you're talking about so for the vcf we're going to look at
+
+00:49:03.359 --> 00:49:09.040
+which is the output of jtk we're only dealing with reference and alternate but just make
+
+00:49:09.040 --> 00:49:16.480
+sure that in your own research question when people ask you figure out what is the ancestral frequency uh you
+
+00:49:16.480 --> 00:49:23.760
+don't just take the reference you need to double check that the reference allele also needs to be the ancestral so this is just something
+
+00:49:23.760 --> 00:49:30.240
+to keep in mind uh we seen we've seen this already uh
+
+00:49:30.240 --> 00:49:37.599
+haplotype phasing okay um so uh depending on um your research uh
+
+00:49:37.599 --> 00:49:43.440
+the reason why jtk hypotype or jtk variant calling is really important
+
+00:49:43.440 --> 00:49:50.720
+is for example in my work i'm a population geneticist i work most of time with
+
+00:49:50.720 --> 00:49:58.000
+publicly available data so i almost never need to deal with bonfire or fastq files
+
+00:49:58.000 --> 00:50:03.920
+most of the time what i'm getting is already the vcfs so i most of the time work like i would say
+
+00:50:03.920 --> 00:50:09.760
+99 of time i work with vcf and forward and it's only when i'm
+
+00:50:09.760 --> 00:50:16.079
+looking at some really weird things like like i see something like outstanding on the vcf i'm not sure
+
+00:50:16.079 --> 00:50:21.520
+if i trust that then i go back to the bomb file so really depending on your specific
+
+00:50:21.520 --> 00:50:29.200
+research project um especially if you're dealing with a lot of publicly available data um vcs is
+
+00:50:29.200 --> 00:50:34.319
+probably your best friend and so here we're just trying to understand overall
+
+00:50:34.319 --> 00:50:41.119
+how in general we're getting the vcf files just in case even if you just you work
+
+00:50:41.119 --> 00:50:46.160
+exclusively with vcf files at times you want to figure out if you want to trust
+
+00:50:46.160 --> 00:50:53.359
+a specific genotype call and in that case you need to know how it went from the raw sequence all
+
+00:50:53.359 --> 00:50:58.800
+the way to vcs so um for the rest of this workshop
+
+00:50:58.800 --> 00:51:05.680
+we're gonna keep encountering several different type of uh file types um
+
+00:51:05.680 --> 00:51:12.319
+i'm sure all of you have been familiar with like these three types here the the faster file which is the one
+
+00:51:12.319 --> 00:51:19.520
+that we're going to encounter for the reference genome because for that one all we need is the
+
+00:51:19.520 --> 00:51:25.200
+the sequence uh and also the fastq files which is the raw sequences you're going to
+
+00:51:25.200 --> 00:51:31.680
+eventually generate variant calls from and we also have the bom file which is intermediate ones
+
+00:51:31.680 --> 00:51:37.359
+which is this fastq files mapped against the reference genome so in your
+
+00:51:37.359 --> 00:51:42.960
+ngs workshop you have covered all that so we're going to deal with two type of output
+
+00:51:42.960 --> 00:51:48.480
+for the gitk workflow we mentioned what is a vcf file
+
+00:51:48.480 --> 00:51:55.119
+and there's another type which is which looks almost identical to a reset file but slightly different
+
+00:51:55.119 --> 00:52:02.079
+so that file is an intermediate output and which is the first output we're going to get from jtk it is called a
+
+00:52:02.079 --> 00:52:07.839
+gvcf file so what g stands for is a instead of vcf it is a genomic
+
+00:52:07.839 --> 00:52:14.000
+variant call format so it is called a vcf but it's actually confusing because it sounds
+
+00:52:14.000 --> 00:52:21.200
+like this file also just includes the variance but instead this file includes the
+
+00:52:21.200 --> 00:52:29.280
+genotype for all of your genomic positions so it includes variance and also the non-variance
+
+00:52:29.280 --> 00:52:34.960
+so for vcf for example if you noticed like in the example i gave a few slides ago
+
+00:52:34.960 --> 00:52:41.440
+um if you're looking at these positions they're not consecutive like you have positions like three
+
+00:52:41.440 --> 00:52:49.680
+million whatever the next one is not instead of like four five one you have maybe like you skip like
+
+00:52:49.680 --> 00:52:55.599
+16 positions and you have this in your vcf file it doesn't mean everything in the middle
+
+00:52:55.599 --> 00:53:01.599
+does not exist they all exist what it means is all everything in the middle here
+
+00:53:01.599 --> 00:53:06.640
+are not variants they all look identical and they all look like the reference area
+
+00:53:06.640 --> 00:53:14.960
+so we don't since they're not variants we don't include those in the vcf but gvcf would contain
+
+00:53:14.960 --> 00:53:22.400
+the information for every single position so if you're looking at a like this gvcf intermediate output
+
+00:53:22.400 --> 00:53:28.319
+like this file is so much larger and all of these positions in theory are consecutive but
+
+00:53:28.319 --> 00:53:34.400
+not the vcn file so for gatk this is our ultimate input
+
+00:53:34.400 --> 00:53:41.520
+and this is our output and vcf file is the ultimate ones that we're interested in like we can
+
+00:53:41.520 --> 00:53:48.880
+eventually ignore network get rid of the gvcf and we use gvsf to get a vcf calls
+
+00:53:48.880 --> 00:53:55.359
+um so this is the gatk workflow that we're
+
+00:53:55.359 --> 00:54:04.480
+interested in so it in general consists of three parts so um
+
+00:54:04.480 --> 00:54:11.359
+depending on our schedule um we i i don't i think we can well cover
+
+00:54:11.359 --> 00:54:19.040
+the first part we may cover cover some of this and the rest this part for sure we're gonna live on to tomorrow so so what it means is
+
+00:54:19.040 --> 00:54:25.359
+it is this um flow chart tells us how we go from the xiao sequence reads
+
+00:54:25.359 --> 00:54:30.880
+all the way to vcf so it includes three components the first component is
+
+00:54:30.880 --> 00:54:37.599
+to get a bomb file that is good enough to call vcfs or to covariance
+
+00:54:37.599 --> 00:54:43.680
+so in your ngs class you may have a work with with this part that you have your route
+
+00:54:43.680 --> 00:54:49.200
+with in fast q files um you have your reference genome you map them against your reference genome
+
+00:54:49.200 --> 00:54:54.400
+you get some bomb file you may not i'm not sure like i
+
+00:54:54.400 --> 00:55:02.000
+correct if i'm wrong like i think you didn't cover in your ngs class that given a original bomb file how you
+
+00:55:02.000 --> 00:55:09.920
+do some uh different like like alignments uh or calibration to get
+
+00:55:09.920 --> 00:55:16.240
+a bomb file that is good for variant coding um so we're going to focus on here uh
+
+00:55:16.240 --> 00:55:22.880
+especially for today that how we get a bomb file that is ready to go the next part is
+
+00:55:22.880 --> 00:55:30.000
+the variant calling part so this is given we have this bond file that we generated from this first part
+
+00:55:30.000 --> 00:55:38.079
+how we get the gvcf files and then eventually how we get vca files so after this part we'll get some vca
+
+00:55:38.079 --> 00:55:44.799
+files that looks like they're ready for analysis but it's but before we actually use
+
+00:55:44.799 --> 00:55:49.839
+those vcf for analysis um we need to actually look at remember
+
+00:55:49.839 --> 00:55:57.040
+for the vcf files we have all these like columns that contains a quality so there's quality score there's also quality filters so
+
+00:55:57.040 --> 00:56:02.960
+depending on what they look like you may want to further filter something out refine this vsa
+
+00:56:02.960 --> 00:56:10.160
+files to make them actually ready for your own research so this is in general how
+
+00:56:10.160 --> 00:56:17.599
+gtk work and for today we're just going to go from part to part to see how we set up codes for each part
+
+00:56:17.599 --> 00:56:22.880
+of them um so we have three hours in total
+
+00:56:22.880 --> 00:56:28.559
+now is we have past one hour do you guys want to take a 10 minute break and we come back here
+
+00:56:28.559 --> 00:56:36.799
+because i mean for three hours i think what i'm thinking is we can take maybe two short breaks like at every one
+
+00:56:36.799 --> 00:56:44.160
+hour just in case where like we get zoom fatigue um so
+
+00:56:44.160 --> 00:56:50.960
+if that sounds good uh we can so right now is 232 what if we come back
+
+00:56:50.960 --> 00:56:58.319
+here at 2 40 like like eight nine minutes yeah i'm gonna
+
+00:56:58.319 --> 00:57:04.960
+pause the recording for now so you guys can go grab a coffee and do whatever and we're gonna be here at uh 2
+
+00:57:04.960 --> 00:57:13.200
+40. okay so let's start back again
+
+00:57:13.200 --> 00:57:19.760
+so where i was well one second let me share the screen
+
+00:57:21.200 --> 00:57:27.920
+okay yes the screen sharing working for now okay good
+
+00:57:27.920 --> 00:57:34.960
+um okay so what we're left with is this is the uh uh
+
+00:57:34.960 --> 00:57:40.960
+this is the workflow for jtk so let's start with some integration
+
+00:57:40.960 --> 00:57:47.200
+with variant calling so i think i kind of like like kind of like mention that already like
+
+00:57:47.200 --> 00:57:52.559
+in what i was talking about vcs but anyway so like before we look at the specific
+
+00:57:52.559 --> 00:58:00.240
+functions in gatk we wanted to understand like how variant calling in general works so we said that we
+
+00:58:00.240 --> 00:58:06.079
+started with raw sequence in the fastq files we have the sequences and then
+
+00:58:06.079 --> 00:58:12.480
+we can uh map them like using bwa for like for human-like organisms we map
+
+00:58:12.480 --> 00:58:18.960
+them against the reference genome okay now we have raw sequences we know where they're lying and we have a bond file
+
+00:58:18.960 --> 00:58:25.520
+um the next thing is we wanted to know before we get variant we wanted to know the genotype for all
+
+00:58:25.520 --> 00:58:31.760
+of the positions which is similar to that gvcf file that i just mentioned earlier
+
+00:58:31.760 --> 00:58:38.880
+so for all of these positions we wanted to know what the genotype is so then for for each of the given
+
+00:58:38.880 --> 00:58:45.760
+position to figure out what is the genotype it is essentially looking at all of these dial sequence rules that
+
+00:58:45.760 --> 00:58:52.559
+are stacked up at this position in your bond file and for this position that we're interested in like
+
+00:58:52.559 --> 00:59:00.640
+what is the call in each of these reads so say if you say intermediately
+
+00:59:00.640 --> 00:59:06.240
+coverage like say you have 15 weeds um so for for this 15 reasons
+
+00:59:06.240 --> 00:59:12.799
+maybe all of them say one thing if that's the case we're good we have that geotag being i mean
+
+00:59:12.799 --> 00:59:18.400
+depending on what that rate is it's either zero zeros or zero ones but in any case that is a
+
+00:59:18.400 --> 00:59:24.400
+homozygous uh but if sometimes you have uh some of these say one thing someone
+
+00:59:24.400 --> 00:59:29.520
+really say the other or someone will say even something else then we know that is
+
+00:59:29.520 --> 00:59:36.799
+maybe a heterozygous whether or not it's a real heterozygous depending on the quality and also like how how this
+
+00:59:36.799 --> 00:59:44.000
+reads align like so there are some hidden algorithms that deal with that but in general like if you intuitively think about how
+
+00:59:44.000 --> 00:59:49.440
+we determine a genotype it is like so that we have a bond file that
+
+00:59:49.440 --> 00:59:55.040
+is well clean that we trust and we just look at for each position what the reads are and depending on what
+
+00:59:55.040 --> 01:00:00.799
+they are we call them different genotypes and then we once we have the genotype
+
+01:00:00.799 --> 01:00:06.720
+reads for all of our individuals then we look across our samples so as i said
+
+01:00:06.720 --> 01:00:12.319
+variant is a relative term it really depends on your population or individuals you you selected something
+
+01:00:12.319 --> 01:00:18.319
+may or may not be a variant but even if it's not a variant all this information are already included
+
+01:00:18.319 --> 01:00:24.799
+in this variant calling so say in the vcl file eventually you get you may cross off some things from the
+
+01:00:24.799 --> 01:00:30.880
+gvcf that are non-variants but they actually do exist because you know that for the ones that are
+
+01:00:30.880 --> 01:00:37.680
+eventually not included in the vcf they are just the reference allele so you can fill them up when you
+
+01:00:37.680 --> 01:00:42.960
+try to merge vcfs between populations so if there's something that is not a variant in one population
+
+01:00:42.960 --> 01:00:50.079
+but it is a variant in another and you want to merge them together to make one big vcf you can't fill those
+
+01:00:50.079 --> 01:00:57.280
+missing parts up because they're not actually missing they are you know they're all zero zeros um so that's how vcs merging
+
+01:00:57.280 --> 01:01:03.680
+works like you can manipulate these files eventually so this is our intuition with variant calling it sounds really
+
+01:01:03.680 --> 01:01:09.760
+simple we just need to determine genotypes and then eventually we figure out which ones
+
+01:01:09.760 --> 01:01:16.319
+vary which ones don't um so when we specifically
+
+01:01:16.319 --> 01:01:22.799
+manipulate that manipulate that into atk we're essentially doing four major steps
+
+01:01:22.799 --> 01:01:29.040
+so three steps of them are involved in gitk and there's one step i think you i'm pretty sure you
+
+01:01:29.040 --> 01:01:35.680
+all have done that but i'm just gonna cover that briefly here in case um it's been a while since you take the ngs
+
+01:01:35.680 --> 01:01:41.520
+class so the first step which is completely outside of jtk is
+
+01:01:41.520 --> 01:01:47.200
+simply to map your reads to the reference genome the to generate the bomb file the second
+
+01:01:47.200 --> 01:01:54.000
+part starts to involve gatk but not exactly uh which is to clean and prepare your
+
+01:01:54.000 --> 01:01:59.359
+bum file so that it's good to call variants um so we're going to
+
+01:01:59.359 --> 01:02:05.839
+show like what what what type of codes that is and the third part which is the first
+
+01:02:05.839 --> 01:02:12.400
+main part that completely just involved g8k this part is to identify the genotypes
+
+01:02:12.400 --> 01:02:19.119
+at all positions at each sample so this is a part where we're getting
+
+01:02:19.119 --> 01:02:26.079
+gvcf's from the bomb file so there is one major function or program in g8k that we're
+
+01:02:26.079 --> 01:02:34.400
+going to use which is called the haplotype caller so lastly we're again in jtk
+
+01:02:34.400 --> 01:02:40.400
+we're going to consolidate all of this genie cf that we got from different samples and jointly call
+
+01:02:40.400 --> 01:02:45.440
+variants among all samples in a given population cohort whatever you call that
+
+01:02:45.440 --> 01:02:52.000
+so this is a process where we're going from gdcfs to vcfs so here this part
+
+01:02:52.000 --> 01:02:58.960
+we're going to involve two functions in jtk one is dealing with how to
+
+01:02:58.960 --> 01:03:06.240
+consolidate this gvsef together and the other is is about jointly called variance
+
+01:03:06.240 --> 01:03:12.000
+given this consolidated gvcfs so that's sounds really simple so let's
+
+01:03:12.000 --> 01:03:17.280
+look at specifically how to get that so um
+
+01:03:17.280 --> 01:03:22.880
+um i'm not gonna go with like how you set up this uh some everybody know this already uh
+
+01:03:22.880 --> 01:03:28.480
+just one thing that i will remind you is if you try to like do this interactive
+
+01:03:28.480 --> 01:03:35.520
+practice make sure you ask for enough memories um i would say
+
+01:03:35.520 --> 01:03:40.880
+at least ask for four gig of memories so that because git g runs in java um
+
+01:03:40.880 --> 01:03:46.640
+and if it's too small it's not really gonna run so i figure this
+
+01:03:46.640 --> 01:03:53.119
+set like this is a memory process it's a memory per given job this should be more than enough for
+
+01:03:53.119 --> 01:03:59.039
+dealing with our practice data but if this is smaller than 4k if you
+
+01:03:59.039 --> 01:04:06.240
+may have issues it should be it should take just a few seconds to get a node using this
+
+01:04:06.240 --> 01:04:11.599
+so let's see this is what i have here i'm just let's uh we can do this together or you
+
+01:04:11.599 --> 01:04:17.039
+can just see what i'm doing and i give you all my codes already you can copy paste them on
+
+01:04:17.039 --> 01:04:22.720
+your on your own end like after after this but just i'm just trying to show like how
+
+01:04:22.720 --> 01:04:30.559
+specifically this works so say i log into a node and i change directly to where i put all
+
+01:04:30.559 --> 01:04:37.760
+the data um so um well i have i have changed into this
+
+01:04:37.760 --> 01:04:43.839
+here already make sure like i think you all have access to this directory uh that's how
+
+01:04:43.839 --> 01:04:50.319
+the scratch works i also just found out recently like i thought i need to just change my like 777 for everything but it turned
+
+01:04:50.319 --> 01:04:55.760
+out oh everything is accessible in scratch um
+
+01:04:55.760 --> 01:05:01.359
+so uh make sure when you work on this data you get a copy in your own directory
+
+01:05:01.359 --> 01:05:06.400
+because this is the only copy i have so i'm trying not to uh
+
+01:05:06.400 --> 01:05:11.680
+make something weird happen here um so before we do anything with this
+
+01:05:11.680 --> 01:05:19.520
+directory um we can load all of these models um so those include
+
+01:05:19.520 --> 01:05:26.160
+the bwa java the pie card which is the part that we're going to use to clean the bomb file also the jtk
+
+01:05:26.160 --> 01:05:32.400
+itself um there's these two other things that may be useful some tools um just everywhere here know how to use
+
+01:05:32.400 --> 01:05:37.520
+some tools like i hope you cover that in the ngs
+
+01:05:37.520 --> 01:05:44.319
+and if not we can i mean i have some samtools code that i give as example
+
+01:05:44.319 --> 01:05:51.039
+um so this is something that will just help us to manipulate the bomb file to view that because bomb file is in binary
+
+01:05:51.039 --> 01:05:56.640
+format you can directly see what is what is in it this thing we're not gonna need this
+
+01:05:56.640 --> 01:06:03.680
+yet but eventually once we have a vcf files we're gonna need some tools
+
+01:06:03.680 --> 01:06:09.280
+to manipulate the vcf files um so there are different tools we can use
+
+01:06:09.280 --> 01:06:14.559
+my favorite is bcf tools there's another very similar thing called vcf tools
+
+01:06:14.559 --> 01:06:21.599
+uh you can load that tool it's also a model so if you do modular load vcf files sorry resafe tools you can
+
+01:06:21.599 --> 01:06:28.319
+also get something so those we don't need those yet but tomorrow we'll need those so you can
+
+01:06:28.319 --> 01:06:34.480
+just load them anyway it doesn't take anything so the first thing is we want to make sure that
+
+01:06:34.480 --> 01:06:40.400
+everything we just loaded works or in another word we know they all work
+
+01:06:40.400 --> 01:06:46.880
+but um nobody's gonna remember like all the like functions like like options like
+
+01:06:46.880 --> 01:06:52.880
+like you need to type after you like after you call the program
+
+01:06:52.880 --> 01:06:58.960
+so one easy thing to find out is it literally you call the program and ask you to to give your printout of
+
+01:06:58.960 --> 01:07:04.559
+all the options you can't give there so for example this program is called pie card
+
+01:07:04.559 --> 01:07:11.760
+pie card is it's a really useful tool for doing a lot of things specifically for our stuffs
+
+01:07:11.760 --> 01:07:18.000
+this is we're going to use some functions in pi card to help us prepare a bomb file that is
+
+01:07:18.000 --> 01:07:23.440
+good to go so if you literally just do java.jar
+
+01:07:23.440 --> 01:07:30.079
+so this is where like this is the the path of where that
+
+01:07:30.079 --> 01:07:36.960
+the javascript for pi card is located on huffman cluster so you can call this directly as is or
+
+01:07:36.960 --> 01:07:42.799
+if you don't want to type a ton of things or if you don't want to copy paste this you can set your own path
+
+01:07:42.799 --> 01:07:50.480
+for jtk for play card because for gitka it's the same thing that um hoffman is located somewhere
+
+01:07:50.480 --> 01:07:56.799
+and you you can type that whole thing or you can explore your own path so it
+
+01:07:56.799 --> 01:08:02.000
+saves your some typing time but anyway if i just copy paste this
+
+01:08:02.000 --> 01:08:06.559
+and here we call that
+
+01:08:07.280 --> 01:08:12.319
+what's going on here they are not request enough memory
+
+01:08:12.319 --> 01:08:21.600
+um anyway so in theory this should give me a
+
+01:08:21.600 --> 01:08:29.679
+a printout of what options are there in pie card let's see what out of memory may arrow
+
+01:08:29.679 --> 01:08:33.199
+okay give me one second
+
+01:08:35.040 --> 01:08:39.838
+let me request something again
+
+01:08:58.400 --> 01:09:03.678
+just load all my modules
+
+01:09:03.759 --> 01:09:08.960
+all right now go this
+
+01:09:11.520 --> 01:09:18.000
+okay there you go okay i don't know what happened there anyway so this is when you're just
+
+01:09:18.000 --> 01:09:26.000
+calling pie card it gives you all of the options it has so the ones we're going to use is
+
+01:09:26.000 --> 01:09:32.159
+just like literally a couple of them we're going to use it to mark duplicates
+
+01:09:32.159 --> 01:09:37.440
+which is here so if you do your command and another thing we're going to
+
+01:09:37.440 --> 01:09:42.960
+use is to change the regroup like that's just a way to um
+
+01:09:42.960 --> 01:09:48.000
+to change the annotation in your bum file um but the first thing we're going to use
+
+01:09:48.000 --> 01:09:53.040
+is this so if you want to know all the options you can deal with with pycart
+
+01:09:53.040 --> 01:09:59.520
+you can call pycard and call mark duplicates and it should give you all the options
+
+01:09:59.520 --> 01:10:07.840
+that it requires um so this is just a test to see that pie cart works another thing
+
+01:10:07.840 --> 01:10:14.320
+is for gatk so there are two ways to call jtk on hoffman one is very similar to how we call
+
+01:10:14.320 --> 01:10:19.360
+pycard that we call java and we find where gtk is located
+
+01:10:19.360 --> 01:10:27.199
+there are all different type of packages on gt of the atk on kaufman i would recommend to use gatk4 so i
+
+01:10:27.199 --> 01:10:33.840
+think there are several versions of jtk 4 or hofmann anyone should work they're not that different but between gtk 4 and
+
+01:10:33.840 --> 01:10:40.960
+jt 3 there's quite some difference so any of the gtk would work so if you just
+
+01:10:40.960 --> 01:10:48.880
+do this it would give you a very similar printout as the pie card
+
+01:10:51.600 --> 01:10:58.719
+there so that's you you're calling this through java another way of calling jtk
+
+01:10:58.719 --> 01:11:06.080
+is since we loaded the jtk module already it means we can like bypass
+
+01:11:06.080 --> 01:11:12.800
+java here and code jtk from there so if you copy paste this it will give
+
+01:11:12.800 --> 01:11:21.440
+you exactly the same printout as just now see here so this is essentially doing the
+
+01:11:21.440 --> 01:11:26.800
+same thing as what we just did so with this you you can see
+
+01:11:26.800 --> 01:11:31.920
+all of the functions that you can call from jtk and then you can call them
+
+01:11:31.920 --> 01:11:37.920
+specifically to see what what type of inputs it requires just because nobody remembers
+
+01:11:37.920 --> 01:11:43.520
+any of this like options um i i never remember those so i use this as
+
+01:11:43.520 --> 01:11:50.080
+a way to help me figure out okay which i'm going to use what type of input options are there
+
+01:11:50.080 --> 01:11:56.560
+um so one thing specifically is of when you're calling jt cases it it
+
+01:11:56.560 --> 01:12:03.280
+is essentially a java thing um you need to like you can't call jtk by itself it'll it'll give you an error
+
+01:12:03.280 --> 01:12:08.320
+and ask you into specified java options so the only options it is mandatory to
+
+01:12:08.320 --> 01:12:14.400
+specify is how much memory you need so that's why earlier we said well we want four gig of memory
+
+01:12:14.400 --> 01:12:19.679
+so here you can do for gig or if you request it more on your interactive node or when you submit a job
+
+01:12:19.679 --> 01:12:27.280
+you can put more here uh i think four gig for what we're doing should be enough so here
+
+01:12:27.280 --> 01:12:32.320
+uh what i'm showing here is like a screenshot of the printout
+
+01:12:32.320 --> 01:12:38.480
+um in case i hope it's all working on your end but if not like this is your reference
+
+01:12:38.480 --> 01:12:45.440
+of how it should look like when you just call jtk by itself without specifying anything else
+
+01:12:45.840 --> 01:12:51.600
+um so before we go into the details and especially after this workshop i'm
+
+01:12:51.600 --> 01:12:58.640
+sure you're gonna work on your own for the git things uh your own research and i'm sure you're
+
+01:12:58.640 --> 01:13:04.320
+gonna run into questions or errors or whatever things you wanna figure out that is not covered in
+
+01:13:04.320 --> 01:13:10.400
+in this workshop so gatk website uh from the broad institute is your best
+
+01:13:10.400 --> 01:13:17.520
+friend i wish when i was learning gatk i couldn't attend a workshop like this but i there wasn't
+
+01:13:17.520 --> 01:13:25.440
+anything available so i literally learned everything through this website by myself uh which means you can do that too uh so
+
+01:13:25.440 --> 01:13:32.080
+every time you run into questions uh or errors just google it and you can always refer
+
+01:13:32.080 --> 01:13:37.120
+them back to the gatk website they have very very helpful tutorials
+
+01:13:37.120 --> 01:13:44.560
+and also troubleshooting discussions that most of the questions
+
+01:13:44.560 --> 01:13:50.560
+that you'll have can be answered through this website so this is just a really helpful
+
+01:13:50.560 --> 01:13:58.719
+reference for your future use um it should have most of the things covered um the only uh
+
+01:13:58.719 --> 01:14:05.760
+uh like tricky thing here is when you google your question uh you see things like
+
+01:14:05.760 --> 01:14:12.640
+that are explained by the jtk website you need to double check if they're talking about gt s3 or g84
+
+01:14:12.640 --> 01:14:19.120
+because as i mentioned earlier those two have like there are something quite different that
+
+01:14:19.120 --> 01:14:24.480
+uh something that there's something you have to do in jtk3 but you no longer need to do that gtp4
+
+01:14:24.480 --> 01:14:31.040
+um so yeah and it's like when you're trying to search things by yourself uh make sure that like it is talking
+
+01:14:31.040 --> 01:14:38.000
+about jtg4 because they look very alike but they are slightly different
+
+01:14:38.000 --> 01:14:43.280
+um so another some set of basic syntax that we can
+
+01:14:43.280 --> 01:14:49.679
+look at is we can use send tools to view our bom file uh and eventually we're gonna need bcf
+
+01:14:49.679 --> 01:14:56.640
+tools but so anyway so what i'm gonna show here is now i'm in my directory with all the
+
+01:14:56.640 --> 01:15:04.640
+practice data you guys are going to need so if you look at what they are this is downloaded publicly available data
+
+01:15:04.640 --> 01:15:11.199
+from the thousand genome project so for a thousand genome project most of the time like in my work for
+
+01:15:11.199 --> 01:15:18.640
+example i deal with their vcfs but they also have all of their bomb files available
+
+01:15:18.640 --> 01:15:25.120
+um so you can fully download those they're just they're just humongous um so clearly i'm not don't download all
+
+01:15:25.120 --> 01:15:32.960
+of them so these are eight individuals uh so every three files is uh a set of individuals so this
+
+01:15:32.960 --> 01:15:40.080
+is things for one individual another so there are eight of them um this includes the bomb file the bomb
+
+01:15:40.080 --> 01:15:47.199
+index and also some other stuffs um and uh they are not the whole genome for these
+
+01:15:47.199 --> 01:15:52.880
+18 individuals they are just the chromosome 20 which is conveniently provided
+
+01:15:52.880 --> 01:15:58.640
+by a thousand genome already like they gave their chromosome 20 like in
+
+01:15:58.640 --> 01:16:04.000
+addition to their whole genome um they did that i think it's for their
+
+01:16:04.000 --> 01:16:09.600
+sanity checking things but for for us like this is a fairly small data set like
+
+01:16:09.600 --> 01:16:14.880
+instead of downloading a few gig like each of them should be like 200 something megabytes
+
+01:16:14.880 --> 01:16:21.360
+um so i figured this is a good practice set for our thing which means when we're
+
+01:16:21.360 --> 01:16:26.480
+eventually calling vcf from these bomb files we're only going to get chromosome 20. we're not going to
+
+01:16:26.480 --> 01:16:32.320
+get the entire genome um which is okay for practice sake but just keep that in mind
+
+01:16:32.320 --> 01:16:38.080
+in your work most of the time what you're dealing with is a whole genome it's not just one chromosome
+
+01:16:38.080 --> 01:16:43.760
+um so we want to maybe you want to just do some quick check what does bomb file
+
+01:16:43.760 --> 01:16:49.199
+look like they look identical to any other bomb file you can think of
+
+01:16:49.199 --> 01:16:54.400
+so you can use stem tools to build the first 10 record
+
+01:16:54.400 --> 01:17:02.159
+to figure out at least okay you know for you started from about 60 uh
+
+01:17:02.159 --> 01:17:08.640
+kb uh for the chromosome 20 and from then on and you can also use them tools to view
+
+01:17:08.640 --> 01:17:15.280
+like specific range of chromosome 20. uh also make one thing you may want to like so
+
+01:17:15.280 --> 01:17:23.280
+this is just showing the record of this uh way and not copy
+
+01:17:24.640 --> 01:17:30.320
+where did it go it should be a small range yeah there you
+
+01:17:30.320 --> 01:17:37.840
+go okay so for a small range like how this uh bomb file looks like um
+
+01:17:37.840 --> 01:17:43.760
+so by now i think you all should be familiar very familiar with what these different columns are
+
+01:17:43.760 --> 01:17:48.960
+anyway this is where your con your your read starts and this is the entire
+
+01:17:48.960 --> 01:17:54.880
+read which chromosome it is um so one thing to
+
+01:17:54.880 --> 01:18:01.199
+keep in mind for this specific practice data set is for this specific set
+
+01:18:01.199 --> 01:18:07.360
+all these chromosomes are labeled as uh the chromosome like so instead of
+
+01:18:07.360 --> 01:18:15.920
+like chr20 they call this just 20. which is fine um but this is something
+
+01:18:15.920 --> 01:18:23.280
+that like if you're using your own like like human genome and if you look at like how
+
+01:18:23.280 --> 01:18:28.320
+they're calling this chromosome sometimes they may or may not include this so it
+
+01:18:28.320 --> 01:18:33.520
+doesn't matter right now but it matters when you're say you want to view a specific
+
+01:18:33.520 --> 01:18:41.280
+interval of your your bond like here you're going to type 20 but if depending on how your uh sequence
+
+01:18:41.280 --> 01:18:48.719
+is worked you may want to add the chr whatever they call this chromosomes uh so see here if i call this c
+
+01:18:48.719 --> 01:18:55.520
+that chromosome 20 instead of just 20 it's gonna throw me arrows because you can't find this chromosome because this chromosome
+
+01:18:55.520 --> 01:19:00.719
+is labeled just as funny here um so another thing is when you're using
+
+01:19:00.719 --> 01:19:07.600
+a reference genome um for the human referential i'm using here it's also like i'm using the version
+
+01:19:07.600 --> 01:19:16.400
+that it has um just like it doesn't have the this the string part for the chromosome um so
+
+01:19:16.400 --> 01:19:23.840
+i mean this is some something really small like like i mean i noticed that when i was preparing for this
+
+01:19:24.080 --> 01:19:29.440
+practice data set but i think that may be something that is common to throw your errors depending
+
+01:19:29.440 --> 01:19:35.120
+on the data you have so sometimes the bond file you have like
+
+01:19:35.120 --> 01:19:42.320
+if you download bim file from some source they may or may not have to buy uh index file so you can use some tools to
+
+01:19:42.320 --> 01:19:47.840
+index the bom file that should be fairly fast um
+
+01:19:47.840 --> 01:19:53.679
+so for bcf tools this is just like like we're going to use that to
+
+01:19:53.679 --> 01:19:59.520
+manipulate our vcf files eventually and also there's like i'm going to mention somewhere that
+
+01:19:59.520 --> 01:20:05.840
+there are some existing data that we need to use to do some calibration and that if you
+
+01:20:05.840 --> 01:20:12.960
+want to view some a few records these are some sample bcf tools command um you can also like since you loaded
+
+01:20:12.960 --> 01:20:18.719
+the bcf tools already you can literally type it and it's going to give you most of the things what you can do with this
+
+01:20:18.719 --> 01:20:23.760
+you can view record you can sort them you can convert them and annotate it like
+
+01:20:23.760 --> 01:20:31.120
+there's a bunch of things you can do with vcf tools but anyway this is some the basic syntax we're going to run into
+
+01:20:31.120 --> 01:20:37.440
+um another really useful program that we're going to uh well i
+
+01:20:37.440 --> 01:20:42.880
+i'm not going to talk too much about like igb here it's called integrative genomic viewer
+
+01:20:42.880 --> 01:20:48.080
+so this is a really helpful software i don't know if in your ngs workshop they covered this
+
+01:20:48.080 --> 01:20:54.000
+uh anyway this is a really useful program where it allows you to visualize your
+
+01:20:54.000 --> 01:21:00.159
+bum file so instead of like looking them like this which is very hard to read it's almost impossible
+
+01:21:00.159 --> 01:21:07.199
+you want to know exactly like how your how your wrists align to each other and if there's like sometimes you may
+
+01:21:07.199 --> 01:21:12.840
+have a part of chromosome that is not well covered so in that case you download this
+
+01:21:12.840 --> 01:21:18.639
+program um it i don't know if there there might be a linux version
+
+01:21:18.639 --> 01:21:25.520
+i don't know how to do that so on my mac computer you can literally just download this as an app and you can load what is your
+
+01:21:25.520 --> 01:21:31.360
+reference genome so in this case i'm using the human hd19 which is slightly older
+
+01:21:31.360 --> 01:21:38.159
+uh coordinate system but it's not super outdated and what you do
+
+01:21:38.159 --> 01:21:44.880
+is you load your bomb in this and you can see okay how your how reads are aligned
+
+01:21:44.880 --> 01:21:50.159
+uh and if there's some part that's for example that is not well covered
+
+01:21:50.159 --> 01:21:56.000
+um so if you try to load your entire bum file here like if it's
+
+01:21:56.000 --> 01:22:02.800
+a whole genome even for just chromosome 20 this is going to take a lot of like you need to
+
+01:22:02.800 --> 01:22:08.719
+like for the convenience if you want to do that in your local computer you don't want to download a few gig of things and load them all into your memory
+
+01:22:08.719 --> 01:22:15.520
+it's the computer is probably gonna shot one thing that will be helpful is i use
+
+01:22:15.520 --> 01:22:20.880
+this just for sanity check so say in retrospect i figure there's an
+
+01:22:20.880 --> 01:22:26.080
+interval that i'm not sure what is going on i just extract them using samtools i
+
+01:22:26.080 --> 01:22:33.040
+extract a specific region um on my from my bum file so that will be a really small file that i can easily
+
+01:22:33.040 --> 01:22:40.800
+download and load them to igb to to literally see them um so
+
+01:22:40.800 --> 01:22:47.520
+so for gatk variant calling this we don't necessarily need this but a lot of times when we're like i
+
+01:22:47.520 --> 01:22:52.960
+feel most of the time we're doing research we're doing troubleshooting so this is just something that this is
+
+01:22:52.960 --> 01:22:58.159
+where you can download this to your local computer and this is a good way to to do sanity
+
+01:22:58.159 --> 01:23:03.199
+check so i'm not going to go through the
+
+01:23:03.199 --> 01:23:08.960
+details of um the map reads uh because i assume by now you all
+
+01:23:08.960 --> 01:23:17.360
+should know that uh and another reason why i'm not gonna give an example here is because i don't want to download the fastq file um
+
+01:23:17.360 --> 01:23:24.639
+that's a lot of things so i'm just going to give the sample codes here this is how it works if you're like in your
+
+01:23:24.639 --> 01:23:32.320
+research you're dealing with starting from the raw sequence um this is what you're going to need so first you download a reference genome
+
+01:23:32.320 --> 01:23:40.239
+uh most like i mean unless you're dealing with some really rare uh study system
+
+01:23:40.239 --> 01:23:47.040
+most of the organisms you're dealing with have a like quite a few reference genome that you can download so for human
+
+01:23:47.040 --> 01:23:54.400
+um so the broad institute have a very good combo of resource that contains not just
+
+01:23:54.400 --> 01:24:00.159
+a reference genome but also other stuff that we're going to encounter later but anyway we can download those
+
+01:24:00.159 --> 01:24:06.159
+literally like we can choose a reference genome to download so i'm using hd19
+
+01:24:06.159 --> 01:24:11.360
+um after you download that uh so i think the broad institute included their
+
+01:24:11.360 --> 01:24:16.719
+the the index of the fafsa file but in case it doesn't you can create index under
+
+01:24:16.719 --> 01:24:24.719
+bwa um and you can create like a like a uh like faster file file
+
+01:24:24.719 --> 01:24:30.000
+uh under some tools and this is just how like and you can create a dictionary
+
+01:24:30.000 --> 01:24:36.239
+for this so the faster the faster.fi and also the dictionary
+
+01:24:36.239 --> 01:24:43.120
+these are essentially the three files you need for a reference genome so for our stuffs i did that all for you
+
+01:24:43.120 --> 01:24:51.280
+already so if you go to the reference genome folder in this package that i gave you
+
+01:24:51.280 --> 01:24:57.920
+it included this reference genome we're going to use so include the first file the file
+
+01:24:57.920 --> 01:25:03.440
+and also the dictionary and also some other stuffs these three are the three things you
+
+01:25:03.440 --> 01:25:10.000
+need for your reference genome directory so the human genome most of the times you
+
+01:25:10.000 --> 01:25:16.000
+can download all three already you don't need to prepare them but sometimes you all you have is a faster file and you need to
+
+01:25:16.000 --> 01:25:22.639
+prepare them a little bit so anyway so this is like if we go back to our general
+
+01:25:22.639 --> 01:25:28.880
+directory we have our bam file here we have our reference genome under a different directory it doesn't
+
+01:25:28.880 --> 01:25:35.760
+have to be a separate directory but just so if you're not meddling things together it's always clean to create a different
+
+01:25:35.760 --> 01:25:41.679
+directory there um so
+
+01:25:41.679 --> 01:25:48.000
+so and also here on the fast of fastest index file you can also see how
+
+01:25:48.000 --> 01:25:53.520
+your reference genome is labeling their chromosomes so remember earlier i mentioned that in
+
+01:25:53.520 --> 01:25:58.880
+the bomb file chromosome 20 is labeled as 20 not chr20
+
+01:25:58.880 --> 01:26:04.960
+so in the reference genome you i also have this chromosomes that are labeled as just
+
+01:26:04.960 --> 01:26:11.199
+numbers instead of like chr whatever so you need to you need to make sure that your reference
+
+01:26:11.199 --> 01:26:16.960
+genomes index for the chromosomes or the contexts are the same as your bonfire context
+
+01:26:16.960 --> 01:26:23.440
+labeling um it's easy to change that if they don't match but eventually they
+
+01:26:23.440 --> 01:26:28.560
+need to match to to continue further and that's that's just a
+
+01:26:28.560 --> 01:26:34.480
+common error source um so this is something you probably all
+
+01:26:34.480 --> 01:26:39.760
+know already um you have your now you have prepared a reference genome
+
+01:26:39.760 --> 01:26:46.480
+you have your first queue files for your raw reads you need to make a rao bom file
+
+01:26:46.480 --> 01:26:52.880
+and this is where we're starting at and with clearly we didn't do that we downloaded a bum file already but this
+
+01:26:52.880 --> 01:26:58.800
+is how this file should look like okay so the next is the real thing
+
+01:26:58.800 --> 01:27:06.719
+is going to start the next part is we need to prepare our bomb file in several ways
+
+01:27:06.719 --> 01:27:13.280
+the first thing of all that we need to do is we need to mark the duplicates or the
+
+01:27:13.280 --> 01:27:18.400
+duplicate reads in our bond files so
+
+01:27:18.400 --> 01:27:25.040
+that involves the pie cart um program that we just mentioned so under
+
+01:27:25.040 --> 01:27:30.239
+pie card we saw that pie cart has a gazillion different type of programs and what
+
+01:27:30.239 --> 01:27:36.080
+we're going to do is we're going to use the mark duplicates we're going to call this function so
+
+01:27:36.080 --> 01:27:43.520
+this function takes one input which is just your bond file it gives you one output oh sorry two
+
+01:27:43.520 --> 01:27:51.520
+outputs it gives you a one output that is like it gets rid of the the duplicates
+
+01:27:51.520 --> 01:27:56.960
+and it also gives you a summary of what it did so these two that you're going to specify
+
+01:27:56.960 --> 01:28:02.000
+here are the output in which case it's going to give you
+
+01:28:02.000 --> 01:28:09.920
+a bump file that you you're going to use for your next steps so i just label this dw um the bomb file
+
+01:28:09.920 --> 01:28:16.000
+and it's going to give you a sampled metric so this step it should be fairly fast to
+
+01:28:16.000 --> 01:28:22.480
+run i can just run that quickly here so that you know how it works so uh i call my pie card
+
+01:28:22.480 --> 01:28:28.080
+like you can type in your own and or you can copy paste this but i figured when you're learning uh
+
+01:28:28.080 --> 01:28:35.360
+sometimes typing your own always help you figure out like what what exactly is going on it's okay a copy card a call mark
+
+01:28:35.360 --> 01:28:42.480
+duplicates a specify my input which is this long name and i name it the output which is the
+
+01:28:42.480 --> 01:28:47.679
+original name plus like i need to mark this and this is my output
+
+01:28:47.679 --> 01:28:53.840
+all right let's just run this quickly it's gonna take maybe one minute no
+
+01:28:53.840 --> 01:29:02.400
+it didn't work ah damn it what was that
+
+01:29:02.400 --> 01:29:09.840
+memory thing again weird um okay i don't know what is going on i
+
+01:29:09.840 --> 01:29:14.960
+can just request a little more memory
+
+01:29:14.960 --> 01:29:21.199
+um i tested it earlier before the class started everything worked and i don't know why it keeps throwing me at
+
+01:29:21.199 --> 01:29:26.239
+memory arrow but it may happen to you too so usually what i do
+
+01:29:26.239 --> 01:29:32.960
+is for everything that i'm going to show as example i submit them as a job script so in the job you can request more
+
+01:29:32.960 --> 01:29:38.800
+things uh you can request a little more resource than you actually need don't request way too
+
+01:29:38.800 --> 01:29:43.920
+much that's gonna slow things down it's gonna make things like stuck in queue but
+
+01:29:43.920 --> 01:29:52.560
+uh anyway let's see if it now allows me
+
+01:29:52.560 --> 01:30:00.159
+to do this yeah i think now it's working okay
+
+01:30:00.159 --> 01:30:06.560
+so this is the correct output of this process um you call these things
+
+01:30:06.560 --> 01:30:13.600
+ask you to uh mark your duplicates and after a while
+
+01:30:13.600 --> 01:30:19.120
+like it looks like it's all running there's no error if it doesn't if there's an actual arrow it's gonna
+
+01:30:19.120 --> 01:30:25.520
+stop and you're gonna know so it looks like it's gonna finish
+
+01:30:25.520 --> 01:30:35.840
+and i'm gonna show you what the output looks like
+
+01:31:02.080 --> 01:31:09.679
+so also remember that when i specify the input like if you still remember how all my
+
+01:31:09.679 --> 01:31:16.159
+files look like there are eight individuals so i'm doing each individuals one by one so this process you can do everything
+
+01:31:16.159 --> 01:31:21.280
+all together you can do like just like like start all of these things you
+
+01:31:21.280 --> 01:31:27.679
+can't do that you have to do them one by one so when you're doing the assignment like when you're trying to get
+
+01:31:27.679 --> 01:31:34.239
+like prepare bomb file and also eventually get a vcf um depending on how your
+
+01:31:34.239 --> 01:31:39.600
+job queues look like like if you don't have a lot of things running like you have a lot of resources open up
+
+01:31:39.600 --> 01:31:47.440
+you can run all eight of them uh and give me a vcf that includes all eight that's fine um if
+
+01:31:47.440 --> 01:31:53.280
+you have like like if some debugging is taking a long time and you just have time to run a few of
+
+01:31:53.280 --> 01:31:58.800
+them i mean first of all you can parallelize them so you can submit one script that
+
+01:31:58.800 --> 01:32:06.080
+like it takes different like like uh id names um so in theory as long as your
+
+01:32:06.080 --> 01:32:12.560
+your uh hoffman can take say eight jobs altogether um it shouldn't take that long but
+
+01:32:12.560 --> 01:32:18.880
+anyway if you have a few of them so it's a it's a cohort it's not just one individual
+
+01:32:18.880 --> 01:32:23.920
+uh like we're gonna identify various amount of few individuals that's fine so if you give me like five individuals
+
+01:32:23.920 --> 01:32:28.960
+that that's okay too but anyway i gave you eight even eight like in
+
+01:32:28.960 --> 01:32:36.880
+practically they're not even considered a population but this is just some some some practice okay it looks like it
+
+01:32:36.880 --> 01:32:44.159
+finished the first process so now if we look at our directory now it give us like in
+
+01:32:44.159 --> 01:32:49.679
+addition to this original files we have it gives us a new bomb file and it gives us a
+
+01:32:49.679 --> 01:32:55.520
+metric output so this bond file is what you're going to use for your
+
+01:32:55.520 --> 01:33:02.400
+next steps so from now on the original this is original for this individual we no longer need this all we need is
+
+01:33:02.400 --> 01:33:08.960
+this so um sometimes like so like like after this a few steps we're gonna
+
+01:33:08.960 --> 01:33:15.120
+generate a few intermediate bomb file um what you can do is you keep the last
+
+01:33:15.120 --> 01:33:21.360
+one like you keep the first one you keep the last one and after every step you if they're taking too much like like
+
+01:33:21.360 --> 01:33:26.719
+disk space you can get rid of those intermediate ones um keep the original one because that's
+
+01:33:26.719 --> 01:33:32.400
+the original one like if anything goes wrong you have your reference like like at least i can
+
+01:33:32.400 --> 01:33:38.480
+start from scratch again um keep the last one like the ready to go bomb because that's the one
+
+01:33:38.480 --> 01:33:44.239
+that goes into vcf so if you are doing like troubleshooting you you think the problem didn't come
+
+01:33:44.239 --> 01:33:51.440
+from when you're preparing the bomb file you don't need to rerun this bomb cleaning again you can just go between bomb to like
+
+01:33:51.440 --> 01:33:58.880
+couple type calling uh like the gitk part so so yeah so this is just like
+
+01:33:58.880 --> 01:34:04.159
+we're going to generate a few intermediate things so with all eight individuals and remember
+
+01:34:04.159 --> 01:34:10.400
+this is just chromosome 20. so if you're dealing with like a whole genome like each one file could be a like 30
+
+01:34:10.400 --> 01:34:16.880
+gig um so you don't want to keep so many copies of those like they may take a lot of space
+
+01:34:16.880 --> 01:34:22.639
+so keep the first and keep the last intermediate ones once you finish using them you can get rid of them um
+
+01:34:22.639 --> 01:34:31.120
+okay so this is the first part we can mark duplicates now we generated a new bomb file the next thing
+
+01:34:31.120 --> 01:34:37.120
+is it is not strictly necessary depending on how your original one file looked like but this
+
+01:34:37.120 --> 01:34:42.320
+is just like something to like this is a step to annotate our bom files
+
+01:34:42.320 --> 01:34:49.679
+we want to assign um uh in the uh individuals with uh
+
+01:34:49.679 --> 01:34:56.960
+like what is their population name what is their individual id name so because sometimes your raw risk may
+
+01:34:56.960 --> 01:35:02.239
+just come like fresh off the bench and individuals may just literally be
+
+01:35:02.239 --> 01:35:08.320
+labeled like one two three four five if you want to rename them to something else um you can do that in this step
+
+01:35:08.320 --> 01:35:17.360
+and if you want to assign them to a population name you can do that here too so here if you look at this
+
+01:35:17.360 --> 01:35:24.000
+it calls pi card again it uses a different function called add
+
+01:35:24.000 --> 01:35:30.400
+or replace real groups it takes one input which is the new bomb file you just generated
+
+01:35:30.400 --> 01:35:35.440
+after you mark the duplicates and it's going to give you another bomb
+
+01:35:35.440 --> 01:35:42.159
+output uh which you can label them as like a really grouped um dw like whatever bum file so it's
+
+01:35:42.159 --> 01:35:47.199
+going to give you another bomb file here and the rest here is to specify how you
+
+01:35:47.199 --> 01:35:55.119
+want to add or change your read groups so the first here is the population name
+
+01:35:55.119 --> 01:36:02.159
+so your original bomb file may not include the information so you can add it here so
+
+01:36:02.159 --> 01:36:08.239
+uh since i downloaded this data set from a thousand genomes and i know these are the british
+
+01:36:08.239 --> 01:36:14.880
+individuals they are like i'm pretty sure there they included this already but i i mean in case it doesn't you can say
+
+01:36:14.880 --> 01:36:22.320
+okay the population name is the the british like the gbr population from the thousand genome um
+
+01:36:22.320 --> 01:36:29.679
+you can give it a library name um whatever you want to call this and also you can annotate which sequencing
+
+01:36:29.679 --> 01:36:34.719
+platform it came off of so uh these ones they come from
+
+01:36:34.719 --> 01:36:41.119
+illumina illumina um so you can write that here and also you can specify
+
+01:36:41.119 --> 01:36:47.360
+um like in theory everything should be sorted by coordinates but in case they're not you can specify
+
+01:36:47.360 --> 01:36:54.239
+how you want to sort things and also you can specify the platform unit there's also some
+
+01:36:54.239 --> 01:37:00.320
+um like like like logistic things and lastly you specify your sample name
+
+01:37:00.320 --> 01:37:06.239
+so here i mean this sample is already called this already but in case they're not if they're just like
+
+01:37:06.239 --> 01:37:13.119
+number one then you can change your sample id here so this step should also be fairly fast
+
+01:37:13.119 --> 01:37:21.040
+um so here i wrote this code that i called pie card called add or change groups input
+
+01:37:21.040 --> 01:37:27.920
+output whatever else okay let's see if it runs
+
+01:37:28.639 --> 01:37:34.960
+since it's running since this is really just a annotation part this step
+
+01:37:34.960 --> 01:37:40.159
+is pretty fast okay let's leave it running and let's
+
+01:37:40.159 --> 01:37:48.080
+continue on our end um so the next thing that
+
+01:37:48.080 --> 01:37:54.719
+we're going to deal with in gatk which is actually one of the last step before we have this bomb file
+
+01:37:54.719 --> 01:38:03.119
+ready to go is what we call base quality score recalibration uh the acronym is bqsr
+
+01:38:03.119 --> 01:38:08.320
+uh later like after we have a vcf file we're gonna
+
+01:38:08.320 --> 01:38:13.440
+deal with another function called vqsr so they sound really like they're really
+
+01:38:13.440 --> 01:38:20.480
+alike but they're not exactly the same thing so and they're all in jtk which is confusing uh so just make sure like
+
+01:38:20.480 --> 01:38:26.400
+you're calling the right thing here okay so what what is bqsr like why we need to do this
+
+01:38:26.400 --> 01:38:32.400
+uh we have for example if you try to visualize our bum original bond file in igb we may see
+
+01:38:32.400 --> 01:38:39.679
+that things look really messy like it doesn't really look like like how others are supposed to be like
+
+01:38:39.679 --> 01:38:46.560
+like there are some parts like like there may be some like like this artifacts that it looks like a
+
+01:38:46.560 --> 01:38:53.119
+variant but it may or may not actually be that so that is because i mean this is the nature of the raw
+
+01:38:53.119 --> 01:38:58.400
+sequencing data um it may have a lot of like this systematic or machine errors
+
+01:38:58.400 --> 01:39:05.360
+um made like from the sequencing process so you want to before you covariance
+
+01:39:05.360 --> 01:39:11.440
+because those systematic errors may look like variants but they're not so you want to make sure
+
+01:39:11.440 --> 01:39:17.840
+you get rid of those before you actually call the real variance so this is essentially what is
+
+01:39:17.840 --> 01:39:23.840
+recalibration about it's like we want to identify what is a real variant what is
+
+01:39:23.840 --> 01:39:30.639
+a artifact and we get rid of them um so that's what this process is all
+
+01:39:30.639 --> 01:39:36.639
+about and and as gatk tells us like the especially for the short
+
+01:39:36.639 --> 01:39:43.199
+variance calling process it relies heavily on the this quality scores so essentially what we're trying to do
+
+01:39:43.199 --> 01:39:48.639
+is we want to train a machine learning model um to figure out
+
+01:39:48.639 --> 01:39:54.000
+um like given the quality score and how variants look like in a set that we know
+
+01:39:54.000 --> 01:40:00.880
+for sure these are the truth and we want to re-adjust like our sequencing data based on that
+
+01:40:00.880 --> 01:40:06.480
+um so in case you guys are not familiar with machine learning model it sounds really fancy everybody talks about
+
+01:40:06.480 --> 01:40:11.679
+machine learning these days um just a quick like recap of what machine
+
+01:40:11.679 --> 01:40:17.520
+learning is about um you can think of machine learning as a dummy
+
+01:40:17.520 --> 01:40:23.440
+that like or if you try to think about yourself like when you're really young when you're learning about
+
+01:40:23.440 --> 01:40:28.960
+the world so say people tell you there's a category called fruit there's another
+
+01:40:28.960 --> 01:40:34.480
+category called vegetable you don't really know what they are because at first those two categories
+
+01:40:34.480 --> 01:40:40.719
+just sounds really abstract for you you look at some like an object in front of you you may not know if it's
+
+01:40:40.719 --> 01:40:46.480
+fruit or vegetable so how do you figure those out so when we are learning like when we're
+
+01:40:46.480 --> 01:40:52.320
+really young like we're giving examples so we're given that like look at an apple this is a fruit
+
+01:40:52.320 --> 01:40:58.159
+look at a pear this is a fruit a banana is a fruit so you're given a lot of examples of what
+
+01:40:58.159 --> 01:41:04.639
+fruit is and eventually in yourself you kind of figure okay i kind of figured some common theme
+
+01:41:04.639 --> 01:41:11.840
+about what fruit is and then you're told a celery is a vegetable a cabbage is vegetable tomato is a
+
+01:41:11.840 --> 01:41:19.920
+vegetable onion is a vegetable so then you also figure okay i kind of figured what vegetable is there may not be
+
+01:41:19.920 --> 01:41:27.679
+they may not be that clear what they are but generally speaking so now if you're given like some like if
+
+01:41:27.679 --> 01:41:33.679
+you're given a carrot and people ask you if this is a fruit vegetable given what you have seen before you
+
+01:41:33.679 --> 01:41:39.119
+figure okay this most likely is a vegetable so that's how we learn things when we
+
+01:41:39.119 --> 01:41:45.040
+were learning and for machine learning this is a very similar process it's at first you have a dummy model
+
+01:41:45.040 --> 01:41:52.159
+that knows nothing it's just a thing like it's there so you give it data that with
+
+01:41:52.159 --> 01:41:57.920
+labels that is like well labeled so you give it like this is a bad quality score this is a
+
+01:41:57.920 --> 01:42:03.040
+good quality score and this is what they're associated with you get if after it has seen
+
+01:42:03.040 --> 01:42:09.119
+enough examples it kind of like made like you kind of mold this model
+
+01:42:09.119 --> 01:42:14.400
+into a thing that it can after you give another thing without a label it can give you a
+
+01:42:14.400 --> 01:42:22.880
+classification of if it's a vegetable if it's a fruit so that's like a analogy of what machine learning
+
+01:42:22.880 --> 01:42:30.719
+is about it needs to see a lot of real data with good labels to figure out uh how to make
+
+01:42:30.719 --> 01:42:36.639
+a right decision between two classes so back to bqsr that was a long way of
+
+01:42:36.639 --> 01:42:42.000
+saying what bqsr is is uh in gatk it can train a machine
+
+01:42:42.000 --> 01:42:50.239
+learning model uh in which case you give it requires a set of um existing data
+
+01:42:50.239 --> 01:42:55.679
+that uh from all other studies these are the data that we trust these
+
+01:42:55.679 --> 01:43:01.760
+are for short variants and they're all associated with quality scores and how these variants look like
+
+01:43:01.760 --> 01:43:08.960
+um so this is our our training data in this machine learning model so for human um again the broad
+
+01:43:08.960 --> 01:43:15.280
+institute conveniently gave us a lot of information other than the reference genome so we can download
+
+01:43:15.280 --> 01:43:22.639
+some like the the snip database and we can also download um uh intel database um
+
+01:43:22.639 --> 01:43:29.119
+so it anyway those all gave us like like some existing sites of things that we we know
+
+01:43:29.119 --> 01:43:34.639
+these are for sure variants uh they're good so those are the input for the machine learning model
+
+01:43:34.639 --> 01:43:40.719
+so back to our data okay so first of all that add or replace
+
+01:43:40.719 --> 01:43:46.159
+uh regroup process finish like after you see this message you know
+
+01:43:46.159 --> 01:43:54.320
+it's done there's no error we're good and then if you look at the output it now gave us another new bomb file
+
+01:43:54.320 --> 01:44:00.639
+like after this this is a new one file that is marked the duplicates are marked marked
+
+01:44:00.639 --> 01:44:06.639
+up and the real groups are well labeled so this is the bomb file that we're
+
+01:44:06.639 --> 01:44:12.400
+going to need for our bqsr process so now since we no longer need this if it's taking a lot of disk space
+
+01:44:12.400 --> 01:44:18.800
+you can get rid of that or keep it depending on what would you prefer so
+
+01:44:18.800 --> 01:44:24.239
+now if we go back to our folder but now we're talking about bqsr
+
+01:44:24.239 --> 01:44:32.639
+if you go to this folder then the nonsense i downloaded
+
+01:44:32.639 --> 01:44:40.239
+all of the snips and indels that have been identified in a thousand genome project
+
+01:44:40.239 --> 01:44:46.080
+um so for i mean since we're using a thousand genome data
+
+01:44:46.080 --> 01:44:53.840
+we can use their profile for for this for this step ideally we want to we want to use a
+
+01:44:53.840 --> 01:44:59.199
+snip and indel uh profile from all human populations so there is such a
+
+01:44:59.199 --> 01:45:05.920
+thing it's called dp snips it's a it's a database of all human short
+
+01:45:05.920 --> 01:45:11.760
+variants i think current is hosted by ncbi you can download it directly from their ftp
+
+01:45:11.760 --> 01:45:16.880
+um but that file is ridiculously big we don't necessarily need that here so
+
+01:45:16.880 --> 01:45:22.320
+for our like to to make our practice like a like something manageable within
+
+01:45:22.320 --> 01:45:28.800
+the next couple of days um i didn't download that part but we can also use that if you prefer
+
+01:45:28.800 --> 01:45:34.639
+so we can use this um as our training data in this bqs machine
+
+01:45:34.639 --> 01:45:41.600
+learning model so how does this work for also for other most of the other common study systems
+
+01:45:41.600 --> 01:45:49.520
+you can download this uh short variance this non-site from some online platform
+
+01:45:49.520 --> 01:45:55.840
+so for mouse you can use the standard database um i think for plans there should be
+
+01:45:55.840 --> 01:46:02.000
+things like this similar tool i just don't know what exactly they are um anyway so going back to bqsr now that
+
+01:46:02.000 --> 01:46:08.800
+we know this is uh our known like the training data how do we set how do we train a machine
+
+01:46:08.800 --> 01:46:14.080
+learning model first of all so again here we come back to jtk
+
+01:46:14.080 --> 01:46:20.960
+this is no longer in pi card in jtk we call the bqsr
+
+01:46:20.960 --> 01:46:26.800
+function it's a base recalibrator we tell it what is our reference genome so we need
+
+01:46:26.800 --> 01:46:34.480
+to give it the path of our reference that faster file like that that thing and the input is our
+
+01:46:34.480 --> 01:46:41.600
+new bomb file that we just generated after the two cleaning steps and we need to specify
+
+01:46:41.600 --> 01:46:46.719
+the known sites so um here we have two set of known
+
+01:46:46.719 --> 01:46:52.800
+sites we have the snips when we have the indels there are two separate files so you can you can specify known size
+
+01:46:52.800 --> 01:46:58.800
+twice if you have one thing you can just specify once so this part like this known size can be multiple
+
+01:46:58.800 --> 01:47:04.480
+like this long story errors and the output instead of giving a new
+
+01:47:04.480 --> 01:47:10.639
+one file just yet before that it actually so this step
+
+01:47:10.639 --> 01:47:17.600
+only gives you a table so what it is is it this step trains a machinery model and
+
+01:47:17.600 --> 01:47:22.960
+it tells you which part of your bom file needs to be recalibrated
+
+01:47:22.960 --> 01:47:28.960
+so this table is a relatively small file it's not that big it's not even comparable to the bomb file size
+
+01:47:28.960 --> 01:47:36.719
+but this process just remember it does not give you a new bomb file yet but it gives you a list of things in
+
+01:47:36.719 --> 01:47:45.920
+this table that um that the recalibration needs to be done at so uh i gave you some sample command
+
+01:47:45.920 --> 01:47:51.920
+for this process this process takes quite a while um i don't know i never finished this
+
+01:47:51.920 --> 01:47:58.960
+for our sample data so i don't know how long exactly it takes to run this but since it's it it's related to
+
+01:47:58.960 --> 01:48:04.960
+training and machine learning model it's it's gonna take a little bit at least not something we're gonna wait
+
+01:48:04.960 --> 01:48:10.639
+here so you try this here i couldn't read file okay
+
+01:48:10.639 --> 01:48:18.480
+i think i'm in the wrong folder uh now it should work
+
+01:48:18.480 --> 01:48:25.040
+okay there it is working so you can watch this working or you can submit this as a job and
+
+01:48:25.040 --> 01:48:30.560
+wait somewhere else and you don't have to watch this happening live but anyway this is
+
+01:48:30.560 --> 01:48:37.280
+already showing you this training part is working it is going to eventually generate generate you a table but we're not going
+
+01:48:37.280 --> 01:48:42.960
+to wait it here um do you guys want to take another break we're almost
+
+01:48:42.960 --> 01:48:49.280
+done for the preparing the the the bomb file part what if we take
+
+01:48:49.280 --> 01:48:56.000
+another short break now is 3 34 let's say 3 35
+
+01:48:56.000 --> 01:49:03.119
+how about we take a short break we come back here at 3 45 p.m like in 10 minutes
+
+01:49:05.840 --> 01:49:12.560
+okay so okay let me finish this bqsr part because we have a little
+
+01:49:12.560 --> 01:49:18.560
+bit left and i think the rest we can just continue tomorrow since
+
+01:49:18.560 --> 01:49:24.080
+most people left already okay so so this part and i think other people can catch up when
+
+01:49:24.080 --> 01:49:31.360
+when they when they when they watch the video so when before we ended
+
+01:49:31.360 --> 01:49:39.360
+uh for the break uh here is where we left off of like we say that we can train
+
+01:49:39.360 --> 01:49:46.080
+a model under bqsr to figure out which things to recalibrate
+
+01:49:46.080 --> 01:49:52.480
+and so we generated this table um so i can't really run the example here
+
+01:49:52.480 --> 01:49:58.239
+because i didn't finish running this because this is gonna take a little bit of time
+
+01:49:58.239 --> 01:50:03.679
+uh so anyway so after we train the model we have that table of which ones to
+
+01:50:03.679 --> 01:50:09.440
+recalibrate now we can actually run the recalibration and generate a new bomb file
+
+01:50:09.440 --> 01:50:16.960
+so what we do is we call jtk we have whatever java option and now
+
+01:50:16.960 --> 01:50:25.199
+instead of doing the base calibrator function we actually apply the bqsr so we call this function
+
+01:50:25.199 --> 01:50:32.800
+we specify the reference genome which is our reference faster file we specify our input which is our bom
+
+01:50:32.800 --> 01:50:40.480
+file from the previous step after we mark the duplicates and after we run we add
+
+01:50:40.480 --> 01:50:47.840
+the read group and now we tell it what is the input recalibration file which is this table
+
+01:50:47.840 --> 01:50:53.040
+that we just generated from the last step so if we specify this
+
+01:50:53.040 --> 01:51:00.800
+and now we say we're going to generate an output which is a bqsr calibrated new bom file so
+
+01:51:00.800 --> 01:51:07.920
+this so i forgot how long this step takes um but all together these two steps
+
+01:51:07.920 --> 01:51:13.280
+um may take anything between like an hour to more than that depending
+
+01:51:13.280 --> 01:51:18.719
+on how big our original bond file is i think since now we only have one chromosome
+
+01:51:18.719 --> 01:51:26.639
+this shouldn't take that long so what i want you guys to do is to
+
+01:51:26.639 --> 01:51:32.320
+i gave you a sample commands here uh like with everything we have covered
+
+01:51:32.320 --> 01:51:38.639
+in this class up until here to apply the bqsr run this on a few individuals that you
+
+01:51:38.639 --> 01:51:44.719
+want to call variants from so i have those examples on this one individuals so you can set
+
+01:51:44.719 --> 01:51:52.080
+set up a job request that does several individuals in parallel um so run those
+
+01:51:52.080 --> 01:51:58.800
+and eventually this bomb file that this after the mark uh duplicates after add
+
+01:51:58.800 --> 01:52:05.360
+group after bqs or recalibration this bomb file is the one that we're going to need for
+
+01:52:05.360 --> 01:52:12.080
+calling the variance so does this sound good
+
+01:52:12.080 --> 01:52:20.000
+if so if there's no more question i think we can safely end today's workshop
+
+01:52:20.000 --> 01:52:26.880
+and tomorrow we're going to we're going to going to assume everybody have this bomb file that we
+
+01:52:26.880 --> 01:52:34.960
+have cleaned up and this is ready to go and we're going to use that um to um to call the variants
+
+01:52:34.960 --> 01:52:40.400
+so do i have any additional questions
+
+01:52:40.400 --> 01:52:45.520
+um just a quick question can you i might have missed like can you tell like how the model is kind of
+
+01:52:45.520 --> 01:52:53.360
+trained on the like the base recalibration yeah like the bcf
+
+01:52:53.440 --> 01:53:01.119
+on the thousand genomes yeah so so if you look at this non wait am i still sharing my swing no
+
+01:53:01.119 --> 01:53:08.080
+um okay are you seeing my terminal now yeah okay so if we go to this nonsense
+
+01:53:08.080 --> 01:53:15.520
+and if you look at like what what i downloaded here so these are some vcf files in like
+
+01:53:15.520 --> 01:53:22.560
+compressed terms so since vcf they're they're not binary those are real text files you can
+
+01:53:22.560 --> 01:53:28.960
+literally use zls and look at how they look like so everything looks like a vcf it starts
+
+01:53:28.960 --> 01:53:35.678
+with vcf headers and we just continue going keep going
+
+01:53:37.280 --> 01:53:44.080
+so there so okay so now we start the actual vcf part
+
+01:53:44.080 --> 01:53:51.599
+so this looks like a vcf except it doesn't have all the individuals so it has all of this so so this is the
+
+01:53:51.599 --> 01:53:57.520
+in-depth indel file so it has all the like everything nothing is a snip so they're all like
+
+01:53:57.520 --> 01:54:03.840
+small insertions or deletions um so this is a profile
+
+01:54:03.840 --> 01:54:10.880
+of human indels from the thousand genome data so this is everything that after like
+
+01:54:10.880 --> 01:54:17.199
+this studies have worked on this they trusted these are real variants and each
+
+01:54:17.199 --> 01:54:22.239
+variance like we know how things look like and also we know what their quality score is
+
+01:54:22.239 --> 01:54:29.920
+so i think what this machine learning is doing is it's trying to associate the pattern between the quality score um and also
+
+01:54:29.920 --> 01:54:35.840
+the variance so that maybe like when when there is like a like dell you
+
+01:54:35.840 --> 01:54:41.920
+shouldn't have a quality score being like zero or like or or something like really
+
+01:54:41.920 --> 01:54:49.760
+like like off so like it's going to look at all of this uh trusted in dells
+
+01:54:49.760 --> 01:54:57.119
+and figure out how a real indulge should look like and also we can similarly look at those
+
+01:54:57.119 --> 01:55:04.159
+uh this snip data so snip data similarly like this is a
+
+01:55:04.159 --> 01:55:11.040
+all the headers and now we come down all the snips so everything is like like there's one
+
+01:55:11.040 --> 01:55:17.199
+entry in the reference and there's one entry in the an alternate these are all snips and they're all each associated with
+
+01:55:17.199 --> 01:55:22.880
+quality scores and all this other information it has so i
+
+01:55:22.880 --> 01:55:30.840
+um right now i can't really talk about like uh how exactly
+
+01:55:30.840 --> 01:55:36.159
+uh uh this uh the underlying uh i don't know what
+
+01:55:36.159 --> 01:55:42.800
+type of algorithm they're using this machine learning model but in general um they look at
+
+01:55:42.800 --> 01:55:50.080
+this existing sites um and like these are the things we trust and it's also like it's trying to find
+
+01:55:50.080 --> 01:55:55.520
+patterns between what its variants look like and their quality is worth so
+
+01:55:55.520 --> 01:56:02.639
+so this is like after looking at all of these sites this model is going to have like a it
+
+01:56:02.639 --> 01:56:09.040
+should have a trained model where it should like if you give it another site uh with a quality score it should
+
+01:56:09.040 --> 01:56:14.320
+tell you whether or not this is a this is good or this is an artifact
+
+01:56:14.320 --> 01:56:22.080
+so if you're interested in the underlying algorithm for this thing i think you can again go back to the gatk website they
+
+01:56:22.080 --> 01:56:27.440
+should have a place where they talk about like what exactly is going on in this machine
+
+01:56:27.440 --> 01:56:32.480
+learning model um from like just off of my head right now i can't really
+
+01:56:32.480 --> 01:56:39.040
+say like what type of algorithm it is i mean i don't know which exactly is the machine learning model they used but
+
+01:56:39.040 --> 01:56:45.920
+generally speaking it's looking at some trusted data and it's going to classify
+
+01:56:45.920 --> 01:56:52.639
+your data yeah yeah that's helpful yeah um
+
+01:56:52.639 --> 01:56:59.199
+so with this let's end today's thing here again for before tomorrow it'll be
+
+01:56:59.199 --> 01:57:04.480
+really helpful if you can get a few of this cleaned bomb file so that we can use
+
+01:57:04.480 --> 01:57:11.040
+them as example to go for the variant calling uh let's continue tomorrow and thanks for so much for
+
+01:57:11.040 --> 01:57:21.920
+staying until now thanks yeah yeah yeah see you tomorrow bye
+
